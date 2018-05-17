@@ -1,0 +1,115 @@
+.btn{
+  position: relative;
+  display: inline-block;
+  padding: 16px 16px 13px;
+  border-radius: 19px;
+  line-height: 0.8;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: @text_dark;
+  transition: background-color .2s;
+
+  &_orange{
+    background: @yellow;
+
+    &:hover{
+      background: darken(@yellow, 15);
+    }
+  }
+}
+
+.btn-lg {
+  position: relative;
+  width: 196px;
+  padding: 23px 15px 20px;
+  line-height: 1;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 1.1px;
+  border-radius: 28px;
+  color: @text_dark;
+
+  &:hover {
+    background: darken(@yellow, 10);
+  }
+}
+
+.btn-hover{
+  position: relative;
+  overflow: hidden;
+  transition: background-color .2s;
+
+  &::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #fff, transparent);
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    transition: width .1s ease, height .1s ease;
+  }
+
+  &:hover {
+    background: darken(@yellow, 10)!important;
+  }
+
+  &:hover::before {
+    --size: 80px;
+  }
+}
+
+.btn_transparent{
+  background-color: transparent;
+  color: @gray_dark;
+  border: 1px solid @gray_dark;
+  transition: background-color .2s,
+              border-color .2s,
+              color .2s;
+
+  &:hover,
+  &:focus,
+  &:active{
+    color: #fff;
+    border-color: lighten(@gray_dark, 15);
+    background-color: lighten(@gray_dark, 15);
+  }
+}
+
+.btn-wrap{
+  text-align: center;
+
+  &_left{
+    text-align: left;
+  }
+
+  &_mt{
+    margin-top: 40px;
+
+    @media @min-md{
+      margin-top: 80px;
+    }
+  }
+
+  &_hero {
+    .btn_transparent{
+      @media @max-md{
+        background: fade(@gray_dark, 50);
+        color: #fff;
+      }
+    }
+
+    @media @max-xs{
+      text-align: center;
+    }
+
+    .btn{
+      @media @max-xs{
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

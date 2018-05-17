@@ -1,0 +1,175 @@
+.simple-carts{
+  @media @min-sm {
+    padding: 30px 0;
+  }
+
+  &__item{
+
+    @media @min-sm{
+      margin-bottom: 45px;
+    }
+
+    &:nth-child(2){
+      .simple-cart {
+        flex-direction: row;
+      }
+    }
+  }
+
+}
+
+.simple-cart{
+  text-align: left;
+
+  @media @min-sm{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__col{
+    @media @min-sm{
+      width: 50%;
+      padding: 0 15px;
+    }
+  }
+
+  &__img{
+    margin: -30px 0;
+    text-align: center;
+
+    @media @min-sm{
+      margin: 0;
+    }
+
+    &:before {
+      content: '';
+      transform: scale(0.5);
+
+      @media @min-sm{
+        transform: scale(1);
+      }
+    }
+
+    &_1{
+      &:before {
+        .png(@price1);
+      }
+    }
+
+    &_2{
+      &:before {
+        .png(@price2);
+
+      }
+    }
+
+    &_3{
+      &:before {
+        .png(@price3);
+      }
+    }
+  }
+
+  &__title{
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: @text_dark;
+
+    @media @min-sm{
+      text-align: left;
+    }
+  }
+
+  &__text{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #101820;
+  }
+}
+
+
+.simple-carts_loyalty{
+  .simple-cart{
+    @media @min-sm{
+      flex-flow: row-reverse nowrap;
+    }
+  }
+}
+
+.simple-carts_guarantee{
+
+  .simple-carts__item{
+    vertical-align: top;
+    margin-bottom: 50px;
+
+    @media @min-md{
+      margin-bottom: 70px;
+    }
+  }
+
+  .simple-cart{
+
+    @media @min-sm{
+    }
+
+    &__img-wrap{
+
+      @media @min-md{
+        flex: 0 0 192px;
+      }
+    }
+
+    &__img{
+
+      &_1{
+        &:before {
+          .png(@guarantee1);
+        }
+      }
+
+      &_2{
+        &:before {
+          .png(@guarantee2);
+        }
+      }
+
+      &_3{
+        &:before {
+          .png(@guarantee3);
+        }
+      }
+
+      &_4{
+        &:before {
+          .png(@guarantee4);
+        }
+      }
+
+      &_5{
+        &:before {
+          .png(@guarantee5);
+        }
+      }
+    }
+
+    &__body{
+      @media @min-sm{
+        padding-left: 30px;
+      }
+
+      @media @min-md{
+        padding-left: 70px;
+      }
+    }
+
+    &__text{
+      color: #101820;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  }
+}

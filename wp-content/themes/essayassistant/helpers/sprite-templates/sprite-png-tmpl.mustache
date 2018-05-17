@@ -1,0 +1,61 @@
+{
+// Default options
+'functions': true
+}
+
+{{#items}}
+    @{{name}}: {{px.offset_x}}, {{px.offset_y}}, {{px.width}}, {{px.height}}, {{px.total_width}}, {{px.total_height}}, '{{{escaped_image}}}';
+{{/items}}
+
+
+{{#options.functions}}
+.icon-attr(@icon){
+    @url: extract(@icon, 7);
+    @width: extract(@icon, 3);
+    @height: extract(@icon, 4);
+    @positionX: extract(@icon, 1);
+    @positionY: extract(@icon, 2);
+    @total_width: extract(@icon, 5);
+    @total_height: extract(@icon, 6);
+}
+
+{{/options.functions}}
+
+.sprite(@icon){
+    .icon-attr(@icon);
+    display: inline-block;
+    background-image: url(@url);
+    width: @width;
+    height: @height;
+    background-position: @positionX @positionY;
+}
+
+.sprite-position(@icon){
+    .icon-attr(@icon);
+    background-position: @positionX @positionY;
+}
+
+.sprite-retina(@icon){
+    .icon-attr(@icon);
+    background-image: url(@url);
+    @width_retina: @width;
+    @height_retina: @height;
+    width: @width_retina/2;
+    height: @height_retina/2;
+    @x: @positionX;
+    @y: @positionY;
+    background-position: @x/2 @y/2;
+    @tw: @total_width;
+    @th: @total_height;
+    background-size: @tw/2 @th/2;
+}
+
+.png(@i) {
+    .sprite(@i);
+}
+.sp(@i){
+    .sprite-position(@i);
+}
+.sr(@i){
+    .sprite-retina(@i);
+}

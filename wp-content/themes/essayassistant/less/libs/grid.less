@@ -1,0 +1,64 @@
+.columns(@n, @prefix, @screen, @i: 12) when (@i >= 1) {
+  .col-@{prefix}-@{i} {
+    @media @screen{
+      width: round( ((100% * @i) / @n), 2 );
+    }
+  }
+
+  .columns(@n, @prefix, @screen, (@i - 1));
+}
+
+.columns(12, md, @min-md); // creating columns for the required extension
+.columns(12, sm, @min-sm); // creating columns for the required extension
+.columns(12, xs, @min-xs); // creating columns for the required extension
+
+
+
+[class ^= 'col-xs-' ],
+[class ^= 'col-sm-' ],
+[class ^= 'col-md-' ],
+[class ^= 'col-lg-' ] {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media @min-md{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.row {
+  margin: 0 -10px;
+
+  @media @min-md{
+    margin: 0 -15px;
+  }
+}
+
+.row-flex {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+
+  @media @min-md{
+    margin: 0 -15px;
+  }
+
+  &_vtop{
+    align-items: flex-start;
+  }
+
+  &_vcenter {
+    align-items: center;
+  }
+
+  &_vbottom {
+    align-items: flex-end;
+  }
+
+  &_reverse{
+    flex-flow: row-reverse wrap;
+  }
+}
