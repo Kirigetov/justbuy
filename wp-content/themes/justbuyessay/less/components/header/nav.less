@@ -1,0 +1,51 @@
+.header-menu{
+
+  &__inner{
+    padding: 30px;
+  }
+
+  &__close{
+    margin-bottom: 15px;
+    text-align: right;
+
+    button{
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+
+      &:hover,
+      &:focus,
+      &:active{
+        outline: none;
+      }
+    }
+  }
+
+  &__order{
+    margin: 25px 0 10px;
+  }
+
+  .menu{
+    padding: 0;
+    font-size: 0;
+
+    @media @max-sm{
+      margin-bottom: 30px;
+    }
+  }
+
+  .menu-item{
+    display: inline-block;
+    list-style: none;
+    margin-right: 30px  ;
+
+    a{
+      color: #fff;
+      font-size: 14px;
+      font-family: @ave-med;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+  }
+}

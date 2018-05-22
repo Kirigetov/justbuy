@@ -1,0 +1,43 @@
+
+.items-cards {
+  font-size: 0;
+
+  &__item {
+    margin: 0 auto 25px;
+  }
+
+  &_cols{
+
+    .item-card{
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+}
+
+.item-card{
+
+  &__img{
+    position: relative;
+    margin-bottom: 20px;
+
+    @media @min-md{
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title{
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.2;
+    min-height: 38px;
+    letter-spacing: 0.65px;
+    color: #101820;
+  }
+
+  &__text{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}

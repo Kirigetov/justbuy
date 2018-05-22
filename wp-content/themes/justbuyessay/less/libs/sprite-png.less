@@ -1,0 +1,75 @@
+    @cup: -759px, -295px, 47px, 56px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @dots: -807px, -493px, 35px, 9px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @gift: -712px, -237px, 54px, 54px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @guarantee1: -548px, -328px, 136px, 180px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @guarantee2: -712px, 0px, 136px, 180px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @guarantee3: -209px, -284px, 192px, 161px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @guarantee4: -548px, 0px, 160px, 160px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @guarantee5: -548px, -164px, 160px, 160px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @item_card1: -762px, -363px, 57px, 35px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @item_card2: -770px, -237px, 46px, 50px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @item_card3: -712px, -413px, 46px, 40px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @item_card4: -712px, -363px, 46px, 46px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @like-us1: -810px, -295px, 34px, 49px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @like-us2: -780px, -184px, 49px, 49px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @like-us3: -712px, -184px, 64px, 49px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @mastercard: -712px, -457px, 48px, 32px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @medal: -712px, -295px, 43px, 64px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @paypal: -762px, -413px, 48px, 32px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @price1: -284px, 0px, 260px, 260px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @price2: 0px, 0px, 280px, 280px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @price3: 0px, -284px, 205px, 300px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @quotes: -712px, -512px, 40px, 30px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @stars: -712px, -493px, 91px, 15px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+    @visa: -764px, -457px, 48px, 32px, 848px, 584px, '/wp-content/themes/master-papers/img/sprite-png.png';
+
+
+.icon-attr(@icon){
+    @url: extract(@icon, 7);
+    @width: extract(@icon, 3);
+    @height: extract(@icon, 4);
+    @positionX: extract(@icon, 1);
+    @positionY: extract(@icon, 2);
+    @total_width: extract(@icon, 5);
+    @total_height: extract(@icon, 6);
+}
+
+
+.sprite(@icon){
+    .icon-attr(@icon);
+    display: inline-block;
+    background-image: url(@url);
+    width: @width;
+    height: @height;
+    background-position: @positionX @positionY;
+}
+
+.sprite-position(@icon){
+    .icon-attr(@icon);
+    background-position: @positionX @positionY;
+}
+
+.sprite-retina(@icon){
+    .icon-attr(@icon);
+    background-image: url(@url);
+    @width_retina: @width;
+    @height_retina: @height;
+    width: @width_retina/2;
+    height: @height_retina/2;
+    @x: @positionX;
+    @y: @positionY;
+    background-position: @x/2 @y/2;
+    @tw: @total_width;
+    @th: @total_height;
+    background-size: @tw/2 @th/2;
+}
+
+.png(@i) {
+    .sprite(@i);
+}
+.sp(@i){
+    .sprite-position(@i);
+}
+.sr(@i){
+    .sprite-retina(@i);
+}

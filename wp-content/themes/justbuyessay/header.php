@@ -33,8 +33,9 @@
 
         <div class="center">
             <div class="header__inner">
+
                 <div class="header__logo">
-                    <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="<?php bloginfo('name'); ?>"/></a>
+                    <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" alt="<?php bloginfo('name'); ?>"/></a>
                 </div>
 
                 <div class="header__nav">
