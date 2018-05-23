@@ -28,7 +28,7 @@ reload = browserSync.reload;
 
 //TASK: gulp
 //--------------------------------------------------
-gulp.task('default', ['less', 'js'], function () {
+gulp.task('default', ['less', 'js', 'svg:inline', 'svg:css'], function () {
     is_prod ? gulp.start('img') : gulp.start('browser-sync', 'watch');
 });
 
