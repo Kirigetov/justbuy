@@ -1,0 +1,49 @@
+.support-items{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+
+  @media @min-md{
+    padding-bottom: 40px;
+  }
+}
+
+.support-item{
+  flex: 1 0 370px;
+
+  &_right{
+    text-align: right;
+  }
+
+  &_center{
+    margin: 0 40px;
+  }
+}
+
+.support{
+  &__title{
+    margin-bottom: 20px;
+    font-size: 56px;
+    line-height: 1;
+    color: #df543b;
+  }
+
+  &__subtitle{
+    margin-bottom: 10px;
+    color: @text_dark;
+    line-height: 1.4;
+    text-transform: uppercase;
+
+    span{
+      @media @min-md{
+        display: block;
+      }
+    }
+  }
+
+  &__descr{
+    color: @text_dark;
+  }
+}

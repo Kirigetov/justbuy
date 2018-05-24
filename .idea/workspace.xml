@@ -2,22 +2,167 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ade17333-ec23-4ed9-93c0-88a2d0b53cce" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/img/sprite-svg-css.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/img/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/reasons.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/support.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/reasons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/support.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/crm-widgets/last-orders.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/404.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/css/fonts/Avenir-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/css/fonts/Avenir-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/css/fonts/Avenir-Heavy.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/css/fonts/Avenir-Heavy.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/css/fonts/Avenir-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/css/fonts/Avenir-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/footer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/front-page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/helpers/sprite-templates/sprite-png-tmpl.mustache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/helpers/sprite-templates/sprite-svg-css-tmpl.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/helpers/sprite-templates/sprite-svg-inline-tmpl.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/helpers/sprite-templates/sprite-svg-par-tmpl.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/home.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/F48373D.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/F48373E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/hero_bg_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/hero_bg_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/sprite-svg-inline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/img/sprite-svg-parallax.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/js/libs/jquery.slicknav.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/js/libs/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/js/libs/zopimClear.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/js/scripts.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/base/btns.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/base/common.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/base/fonts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/base/layout.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/base/typography.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/crm-widgets/discountPriceCalc(type-work).less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/crm-widgets/feedbacks.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/crm-widgets/prices.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/crm-widgets/simplePriceCalc.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/footer/footer-menu.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/footer/footer.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/header/header.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/header/nav.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/hero/hero-simple.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/hero/hero.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/parts/contacts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/parts/item-carts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/parts/simple-carts.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/parts/sliders.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/parts/triangles.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/about-us.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/benefits.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/content-accordion.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/features.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/crm-widgets/last-orders.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/how-it-works.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/like-us.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/review-round.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/components/sections/review.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/helpers/mixins.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/helpers/variables/colors.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/helpers/variables/custom.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/helpers/variables/media.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/grid.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/slick.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/sprite-png.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/sprite-svg-css.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/sprite-svg-inline.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/sprite-svg-parallax.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/less/style.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/loop.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/page-about-us.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/page-guarantees.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/page-order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/page-preview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/page-prices.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/redirects.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sidebar.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/single.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/cup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/dots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/gift.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/guarantee1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/guarantee2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/guarantee3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/guarantee4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/guarantee5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/item_card1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/item_card2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/item_card3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/item_card4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/like-us1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/like-us2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/like-us3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/medal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/paypal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/price1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/price2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/price3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/quotes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/stars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/png-icons/visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-css/arrow_down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-css/arrow_down_blue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-css/calendar-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-css/contact-img-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-css/contact-img.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-css/mouse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-inline/checkmark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-inline/fb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-inline/gp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-inline/in.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-inline/number.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-icons-inline/tw.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-parallax/hero_bg_1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/sprite-src/svg-parallax/hero_bg_2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/hero/hero-second.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/hero/hero.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/reviews/reviews-block.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/reviews/reviews-round.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/reviews/reviews-single.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/about-us-description.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/benefits.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/content-accordion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/features.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/guarantees.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/how-it-works.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/items-cards.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/like-us.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/loyalty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/crm-widgets/discount-simple-calc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/crm-widgets/feedbacks.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/essayassistant/templates/crm-widgets/simple-calc.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/img/sprite-svg-inline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/img/sprite-svg-inline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/btns.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/btns.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/footer/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/footer/footer.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/features.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/features.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/like-us.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/review-round.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/review.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/libs/sprite-svg-inline.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/libs/sprite-svg-inline.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/sprite-src/svg-icons-inline/ringing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/sprite-src/svg-icons-inline/ringing.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/sprite-src/svg-icons-inline/search (1).svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/hero/hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/hero/hero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/features.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/features.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,23 +175,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52598566">
+    <splitter split-orientation="horizontal" split-proportion="0.37238094">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="front-page.php" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+                <state relative-caret-position="103">
+                  <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="statistics.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php">
+          <file leaf-file-name="last-orders.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/crm-widgets/last-orders.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="109">
-                  <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="support.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/support.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="103">
+                  <caret line="17" column="88" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="reasons.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/reasons.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="hero.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/hero/hero.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="193">
+                  <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="btns.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/btns.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -55,47 +236,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="features.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/features.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="29" selection-start-line="29" selection-end-line="30" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="statistics.less" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="22" selection-start-line="22" selection-end-line="22" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/style.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="icons.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/icons.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="colors.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+                <state relative-caret-position="323">
+                  <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -103,8 +248,8 @@
           <file leaf-file-name="layout.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+                <state relative-caret-position="289">
+                  <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -112,8 +257,22 @@
           <file leaf-file-name="typography.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+                <state relative-caret-position="68">
+                  <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="56" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="last-orders.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/crm-widgets/last-orders.less">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="support.less" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/support.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -136,6 +295,12 @@
       <find>.hel-thin(@i);</find>
       <find>order</find>
       <find>section-title</find>
+      <find>text_gray_mid</find>
+      <find>#474747</find>
+      <find>@green</find>
+      <find>#82cb87;</find>
+      <find>section-subtitle</find>
+      <find>#82cb87</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Максим\Documents\OSPanel\domains\essayassistant.net.local\wp-content\themes\essayassistant\less</dir>
@@ -180,18 +345,25 @@
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/hero/hero.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/items-cards.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/parts/item-carts.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/parts/triangles.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/icons.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/features.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/gulpfile.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/reasons.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/features.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/reasons.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/features.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/support.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/btns.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/crm-widgets/last-orders.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/style.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less" />
-        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/hero/hero.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/support.less" />
       </list>
     </option>
   </component>
@@ -202,12 +374,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/wp-content/themes/essayassistant/node_modules" />
     <handled-path value="$PROJECT_DIR$/wp-content/themes/justbuyessay/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/wp-content/themes/essayassistant/package.json" />
       <path value="$PROJECT_DIR$/wp-content/themes/justbuyessay/package.json" />
     </packageJsonPaths>
   </component>
@@ -256,7 +426,7 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="justbuyessay" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="justbuyessay.net.local" type="b2602c69:ProjectViewProjectNode" />
@@ -264,8 +434,8 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="justbuyessay" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="justbuyessay.net.local" type="b2602c69:ProjectViewProjectNode" />
@@ -273,9 +443,9 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="justbuyessay" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="sections" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="hero" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -294,6 +464,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Максим\Documents\OSPanel\domains\justbuyessay.net.local\wp-content\themes\justbuyessay\less\components\sections" />
+      <recent name="C:\Users\Максим\Documents\OSPanel\domains\justbuyessay.net.local\wp-content\themes\justbuyessay\templates\content\sections" />
       <recent name="C:\Users\Максим\Documents\OSPanel\domains\justbuyessay.net.local\wp-content\themes" />
       <recent name="C:\Users\Максим\Documents\OSPanel\domains\essayassistant.net.local\wp-content\themes\essayassistant\helpers\sprite-templates" />
     </key>
@@ -334,7 +506,8 @@
       <workItem from="1527022695087" duration="65000" />
       <workItem from="1527022859998" duration="3970000" />
       <workItem from="1527057991746" duration="2703000" />
-      <workItem from="1527086696524" duration="2979000" />
+      <workItem from="1527086696524" duration="3075000" />
+      <workItem from="1527175711733" duration="7882000" />
     </task>
     <task id="LOCAL-00001" summary="create new theme, start feature section">
       <created>1527026809244</created>
@@ -350,23 +523,30 @@
       <option name="project" value="LOCAL" />
       <updated>1527060620660</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="upd statistics section">
+      <created>1527089756579</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527089756579</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45252000" />
+    <option name="totallyTimeSpent" value="53230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3296355" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49853587" weight="0.43243244" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5014641" side_tool="true" weight="0.43243244" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.37678856" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18448023" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.50073206" side_tool="true" visible="true" weight="0.3052464" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23133236" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
@@ -377,29 +557,29 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49926794" weight="0.73608905" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24450952" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16178624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3296355" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290938" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37360892" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.50073206" side_tool="true" weight="0.37678856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3296355" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49926794" weight="0.73608905" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -410,87 +590,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="create new theme, start feature section" />
     <MESSAGE value="upd feature section" />
-    <option name="LAST_COMMIT_MESSAGE" value="upd feature section" />
+    <MESSAGE value="upd statistics section" />
+    <MESSAGE value="created support block" />
+    <MESSAGE value="create support block" />
+    <option name="LAST_COMMIT_MESSAGE" value="create support block" />
   </component>
   <component name="WordPressConfiguration" doNotAskAgain="true" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/helpers/sprite-templates/sprite-svg-inline-tmpl.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="218" selection-start-line="218" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/less/libs/sprite-svg-parallax.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/helpers/sprite-templates/sprite-svg-par-tmpl.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/less/base/layout.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/how-it-works.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="10" lean-forward="true" selection-start-line="46" selection-start-column="10" selection-end-line="46" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/reviews/reviews-block.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="65" column="10" lean-forward="true" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/templates/crm-widgets/simple-calc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/features.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="10" lean-forward="true" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/essayassistant/templates/content/sections/content-accordion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -701,27 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/features.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/parts/triangles.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -729,52 +822,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/reasons.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="94" column="16" lean-forward="true" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/style.less">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/features.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/content-accordion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" selection-start-line="35" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/btns.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/typography.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="56" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/features.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/icons.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/features.less">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/helpers/variables/colors.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="29" selection-start-line="29" selection-end-line="30" />
+        <state relative-caret-position="323">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/statistics.less">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/crm-widgets/last-orders.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="204">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/statistics.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="32" column="84" selection-start-line="32" selection-start-column="84" selection-end-line="32" selection-end-column="84" />
+        <state relative-caret-position="298">
+          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/base/layout.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="68" column="17" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/hero/hero.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/crm-widgets/last-orders.less">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/less/components/sections/support.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/img/support.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/front-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/support.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="17" column="88" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/justbuyessay/templates/content/sections/reasons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
         </state>
       </provider>
     </entry>

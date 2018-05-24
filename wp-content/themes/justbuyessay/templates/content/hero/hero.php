@@ -8,7 +8,7 @@
             </div>
         </div>
         <div class="hero__widget">
-            <div data-crm-widget="discountPriceCalc"></div>
+            <div data-crm-widget="simplePriceCalc"></div>
         </div>
     </div>
 </div>

@@ -1,47 +1,59 @@
 <!--  begin features  -->
 <section class="section section-col">
-    <div class="section-title"> Why choose us?</div>
-
-    <div class="features">
+    <div class="center">
+        <div class="section-title section-title_green">Outstanding Quality You’ve Been Looking For</div>
+        <div class="features">
 
         <?php
         $data = array(
             array(
-                '1',
-                'school-material',
-                'Unique Texts',
-                'You’ll have original work every time.'
+                'file',
+                'PAPERS DELIVERED',
+                'ON TIME',
+                'Choose any delivery time between 3 hours and 20 days — we’ll deliver your paper by the deadline.'
             ),
             array(
-                '2',
-                'wall-calendar',
-                'Get Quick Results',
-                'Response time to a customer request is less than a minute.'
+                'chat',
+                'UP TO 4 WEEKS OF FREE',
+                'REVISIONS',
+                'Enjoy an unlimited number of free amendments to your paper within 2-4 weeks after downloading.'
             ),
             array(
-                '3',
-                'ringing',
-                'Support 24/7',
-                'We can write your essay even with 3 hrs. deadline.'
+                'connection',
+                'CONNECT WITH',
+                'YOUR WRITER',
+                'Sign in to stay in touch with your writer via the message board. Offer ideas and leave feedback.'
+            ),
+            array(
+                'lifesaver',
+                '24/7',
+                'AVAILABILITY',
+                'We are available via phone, email and live chat. Reach out to get any help you might need.'
             )
         ); ?>
 
-        <?php foreach ($data as $item) : ?>
+        <?php foreach ($data as $key=>$item) : ?>
 
             <div class="features__item">
                 <div class="feature">
                     <div class="feature__img">
-                        <svg class="icon-svg icon-<?php echo $item[1]; ?>">
-                            <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-inline.svg#<?php echo $item[1]; ?>"></use>
+                        <svg class="icon-svg icon-<?php echo $item[0]; ?>">
+                            <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-inline.svg#<?php echo $item[0]; ?>"></use>
                         </svg>
                     </div>
-                    <div class="feature__body">
-                        <div class="feature__title"><?php echo $item[2]; ?></div>
-                        <div class="feature__text"><?php echo $item[3]; ?></div>
-                    </div>
+
+                    <?php if ($key == 3) : ?>
+                        <div class="feature__title"> <span class="feature__title_blue"><?php echo $item[1]; ?></span>
+                            <br><?php echo $item[2]; ?></div>
+                    <?php else : ?>
+                        <div class="feature__title"><?php echo $item[1]; ?> <span class="feature__title_blue"><?php echo $item[2]; ?></span></div>
+                    <?php endif;?>
+                    <div class="feature__text"><?php echo $item[3]; ?></div>
+
                 </div>
             </div>
         <?php endforeach; ?>
+    </div>
     </div>
 </section>
 <!--  end features  -->

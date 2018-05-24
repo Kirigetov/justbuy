@@ -1,6 +1,6 @@
 <!--  begin statistics  -->
 <section class="section section-col">
-    <div class="section-title">Our stats</div>
+    <div class="section-title section-title_left">Our stats</div>
 
     <div class="statistics">
 
