@@ -15,6 +15,10 @@
       .header__inner {
         height: 60px;
       }
+
+      .header__logo{
+        max-width: 95px;
+      }
     }
   }
 
@@ -35,10 +39,11 @@
     height: 100%;
     display: flex;
     align-items: center;
-    flex: 0 0 130px;
+    transition: max-width .2s;
+    max-width: 130px;
 
     @media @min-sm{
-      flex: 0 0 177px;
+      max-width: 130px;
     }
 
     a{

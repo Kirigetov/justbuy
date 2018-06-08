@@ -1,0 +1,82 @@
+.e-collector{
+  background-color: #edf3ff;
+
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -25px;
+    padding: 40px 0;
+  }
+
+  &__item{
+    margin: 0 25px;
+
+    &_widget{
+      flex: 0 0 320px;
+    }
+  }
+
+  &__img{
+    .icon-svg{
+      max-width: 155px;
+      fill: #c6d4fd;
+    }
+  }
+
+  &__descr{
+    color: #474747;
+    font-family: @ave-bold;
+    font-size: 30px;
+  }
+
+  //custom styles
+  #widget-email-collector {
+    padding: 0;
+    background: none;
+    .place-title{
+      display: none;
+    }
+
+    .collector-select-container{
+      height: 48px;
+      margin-bottom: 0;
+      border-radius: 6px;
+
+      &:after{
+        top: 2px;
+        height: 100% !important;
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI3LjJweCIgaGVpZ2h0PSIxNC40cHgiIHZpZXdCb3g9IjAgMCA3LjIgMTQuNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNy4yIDE0LjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggaWQ9ItCc0L3QvtCz0L7Rg9Cz0L7Qu9GM0L3QuNC6XzFf0LrQvtC/0LjRjyIgZmlsbD0iIzFGMkIzRiIgZD0iTTMuNiwwTDAsNS40aDcuMkwzLjYsMHoiLz4NCjxwYXRoIGlkPSLQnNC90L7Qs9C+0YPQs9C+0LvRjNC90LjQul8xX9C60L7Qv9C40Y9fMV8iIGZpbGw9IiMxRjJCM0YiIGQ9Ik0zLjYsMTQuNEw3LjIsOUwwLDlMMy42LDE0LjR6Ii8+DQo8L3N2Zz4NCg==');
+      }
+
+      select{
+        height: 100% !important;
+        padding: 8px 20px !important;
+        font-family: @ave-med !important;
+        font-size: 15px !important;
+        color: #000;
+      }
+
+    }
+
+    input[type="text"]{
+      height: 48px !important;
+      margin-bottom: 0 !important;
+      border-radius: 6px !important;
+      padding: 8px 20px !important;
+      font-size: 15px !important;
+      color: #000 !important;
+    }
+
+    .collector-continue-btn{
+      height: 50px !important;
+      padding: 0 20px !important;
+      background-color: @green !important;
+      border-radius: 6px !important;
+      color: #fafafa !important;
+      font-family: @ave-med !important;
+      font-size: 20px !important;
+    }
+  }
+}
+

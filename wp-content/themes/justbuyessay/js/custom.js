@@ -197,59 +197,59 @@ $(document).ready(function () {
     /*------------------------------
      HOVER BTNS
      ------------------------------*/
-    function showHoverBtns(btnClass) {
+    // function showHoverBtns(btnClass) {
+    //
+    //     var btns = document.querySelectorAll(btnClass);
+    //
+    //     btns.forEach(function (item) {
+    //
+    //         item.onmousemove = function (e) {
+    //
+    //             var x = e.pageX - item.offsetLeft - item.offsetParent.offsetLeft;
+    //             var y = e.pageY - item.offsetTop - item.offsetParent.offsetTop;
+    //             item.style.setProperty('--x', x + 'px');
+    //             item.style.setProperty('--y', y + 'px');
+    //         }
+    //     });
+    // }
 
-        var btns = document.querySelectorAll(btnClass);
+    // showHoverBtns('.js-btn-hover'); //for all btns but not for widget btns
+    //
+    // (function() {
+    //
+    //     if (document.querySelector('[data-crm-widget="simplePriceCalc"]')) {
+    //
+    //         var simpleCalcForm = document.querySelector('[data-crm-widget="simplePriceCalc"]');
+    //
+    //         simpleCalcForm.addEventListener('ready', function () {
+    //
+    //             var btnSubmit = simpleCalcForm.querySelector('.simple-calc__submit button');
+    //             btnSubmit.classList.add('btn-hover', 'js-btn-form-hover');
+    //
+    //             setTimeout(function () {
+    //                 showHoverBtns('.js-btn-form-hover');
+    //             }, 500);
+    //         });
+    //     }
+    // })();
 
-        btns.forEach(function (item) {
-
-            item.onmousemove = function (e) {
-
-                var x = e.pageX - item.offsetLeft - item.offsetParent.offsetLeft;
-                var y = e.pageY - item.offsetTop - item.offsetParent.offsetTop;
-                item.style.setProperty('--x', x + 'px');
-                item.style.setProperty('--y', y + 'px');
-            }
-        });
-    }
-
-    showHoverBtns('.js-btn-hover'); //for all btns but not for widget btns
-
-    (function() {
-
-        if (document.querySelector('[data-crm-widget="simplePriceCalc"]')) {
-
-            var simpleCalcForm = document.querySelector('[data-crm-widget="simplePriceCalc"]');
-
-            simpleCalcForm.addEventListener('ready', function () {
-
-                var btnSubmit = simpleCalcForm.querySelector('.simple-calc__submit button');
-                btnSubmit.classList.add('btn-hover', 'js-btn-form-hover');
-
-                setTimeout(function () {
-                    showHoverBtns('.js-btn-form-hover');
-                }, 500);
-            });
-        }
-    })();
-
-    (function() {
-
-        if (document.querySelector('[data-crm-widget="discountPriceCalc"]')) {
-
-            var simpleCalcForm = document.querySelector('[data-crm-widget="discountPriceCalc"]');
-
-            simpleCalcForm.addEventListener('ready', function () {
-
-                var btnSubmit = simpleCalcForm.querySelector('.cw-order-button');
-                btnSubmit.classList.add('btn-hover', 'js-btn-form-hover');
-
-                setTimeout(function () {
-                    showHoverBtns('.js-btn-form-hover');
-                }, 1000);
-            });
-        }
-    })();
+    // (function() {
+    //
+    //     if (document.querySelector('[data-crm-widget="discountPriceCalc"]')) {
+    //
+    //         var simpleCalcForm = document.querySelector('[data-crm-widget="discountPriceCalc"]');
+    //
+    //         simpleCalcForm.addEventListener('ready', function () {
+    //
+    //             var btnSubmit = simpleCalcForm.querySelector('.cw-order-button');
+    //             btnSubmit.classList.add('btn-hover', 'js-btn-form-hover');
+    //
+    //             setTimeout(function () {
+    //                 showHoverBtns('.js-btn-form-hover');
+    //             }, 1000);
+    //         });
+    //     }
+    // })();
 
     //menu
     (function ( $ ) {

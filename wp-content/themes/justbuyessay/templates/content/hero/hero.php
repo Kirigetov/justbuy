@@ -7,8 +7,8 @@
                 Pay only after you approve the received parts of your paper.
             </div>
         </div>
-        <div class="hero__widget">
-            <div data-crm-widget="simplePriceCalc"></div>
+        <div class="hero__widget discount-calc">
+            <div data-crm-widget="discountPriceCalc"></div>
         </div>
     </div>
 </div>

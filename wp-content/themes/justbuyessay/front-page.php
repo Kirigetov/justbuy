@@ -36,11 +36,10 @@
 
             <?php get_template_part( 'templates/content/sections/features');?>
             <?php get_template_part( 'templates/content/sections/support');?>
-            <?php get_template_part( 'templates/crm-widgets/last-orders');?>
-<!--            --><?php //get_template_part( 'templates/crm-widgets/simple-calc');?>
+<!--            --><?php //get_template_part( 'templates/crm-widgets/last-orders');?>
 <!--            --><?php //get_template_part( 'templates/content/reviews/reviews-block');?>
-<!--            --><?php //get_template_part( 'templates/content/sections/how-it-works');?>
             <?php get_template_part( 'templates/content/sections/content-accordion');?>
+            <?php get_template_part( 'templates/crm-widgets/email-collector');?>
 
         </main>
         <!--end main-->

@@ -14,10 +14,10 @@
                         issues as fast as possible.</div>
                 </div>
             </div>
-            <div class="support-item support-item_center">
+            <div class="support-item">
                 <img class="support-items__img" src="<?php bloginfo('template_url'); ?>/img/support.svg" alt="">
             </div>
-            <div class="support-item support-item_right">
+            <div class="support-item">
                 <div class="support__title">98.9%</div>
                 <div class="support__subtitle">98.9% customers highly rate
                     <span> our support services</span></div>
