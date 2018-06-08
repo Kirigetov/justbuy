@@ -4,17 +4,30 @@
   margin: 0 -15px -45px;
 
   &__item{
-    flex: 0 1 270px;
-    margin: 0 15px 45px;
+    flex: 0 1 50%;
+    padding: 0 15px 25px;
+
+    @media @min-md{
+      padding: 0 15px 45px;
+    }
+
+    @media @min-lg{
+      flex: 0 1 300px;
+    }
   }
 }
 
 .statistic{
-  padding: 26px 10px;
+  height: 100%;
+  padding: 20px 10px;
   border-radius: 6px;
   background-color: #edf3ff;
   text-align: center;
   box-shadow: 9px 10px 15px rgba(0, 0, 0, 0.07);
+
+  @media @min-md{
+    padding: 26px 10px;
+  }
 
   &__value,
   &__text{
@@ -23,9 +36,16 @@
 
   &__value{
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 28px;
     font-family: @ave-bold;
     color: #3c69e6;
+
+    @media @min-md{
+      font-size: 42px;
+    }
+    @media @min-lg{
+      font-size: 50px;
+    }
 
     span{
       font-size: 20px;
@@ -35,7 +55,11 @@
 
   &__text{
     color: @text_dark;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 500;
+
+    @media @min-md{
+      font-size: 16px;
+    }
   }
 }

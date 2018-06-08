@@ -2,8 +2,13 @@
 
   [data-crm-widget="discountPriceCalc"] {
     #cw-widgets-discount-price-calc {
-      max-width: 370px;
-      padding: 20px 25px;
+      max-width: 330px;
+      padding: 20px;
+
+      @media @min-md{
+        max-width: 370px;
+        padding: 20px 25px;
+      }
 
       .cw-discount-title{
         height: auto;

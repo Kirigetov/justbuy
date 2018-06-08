@@ -6,6 +6,10 @@
 
         <div class="support-items">
             <div class="support-item">
+                <img class="support-items__img" src="<?php bloginfo('template_url'); ?>/img/support.svg" alt="">
+            </div>
+
+            <div class="support-item">
                 <div class="support">
                     <div class="support__title">6 min</div>
                     <div class="support__subtitle">6 minutes average response time</div>
@@ -14,9 +18,7 @@
                         issues as fast as possible.</div>
                 </div>
             </div>
-            <div class="support-item">
-                <img class="support-items__img" src="<?php bloginfo('template_url'); ?>/img/support.svg" alt="">
-            </div>
+
             <div class="support-item">
                 <div class="support__title">98.9%</div>
                 <div class="support__subtitle">98.9% customers highly rate
