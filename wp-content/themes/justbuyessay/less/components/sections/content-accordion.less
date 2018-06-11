@@ -9,13 +9,21 @@
 }
 
 .seo-items{
-  display: flex;
-  justify-content: space-between;
-  margin: 0 -15px;
+  @media @min-sm {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
 
   &__col{
-    flex: 1 0 33.3%;
-    padding: 0 15px;
+    @media @min-sm {
+      flex: 1 0 50%;
+      padding: 0 15px;
+    }
+    @media @min-lg{
+      flex: 1 0 33.3%;
+    }
   }
 }
 

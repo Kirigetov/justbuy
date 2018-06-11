@@ -30,7 +30,9 @@
             <div class="statistics__item">
                 <div class="statistic">
                     <?php if ($key == 1) : ?>
-                        <div class="statistic__value"><?php echo $item[0]; ?><span> out of 10</span></div>
+                        <div class="statistic__value"><?php echo $item[0]; ?><span>
+                                <span class="hidden_xxs"> out of</span>
+                                <span class="visible_xxs"> / </span> 10</span></div>
                     <?php else : ?>
                         <div class="statistic__value"><?php echo $item[0]; ?></div>
                     <?php endif;?>

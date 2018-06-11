@@ -33,6 +33,14 @@
 
         <div class="center">
             <div class="header__inner">
+                <!--  mob-menu btn  -->
+                <div class="mob-item">
+                    <button class="hamburger hamburger--spin js-burger" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
 
                 <div class="header__logo">
                     <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.svg" alt="<?php bloginfo('name'); ?>"/></a>
@@ -60,6 +68,16 @@
 <!--                            <a href="/order" class="btn btn_orange btn_rounded hidden_sm">order now</a>-->
                         </div>
                     <?php endif ?>
+
+
+                </div>
+
+                <div class="mob-item">
+                    <a class="mob-order js-burger" type="button">
+                        <svg class="icon-svg icon-cart">
+                            <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-inline.svg#cart"></use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>

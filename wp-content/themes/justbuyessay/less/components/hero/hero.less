@@ -1,7 +1,10 @@
 .hero{
-  min-height: 530px;
   margin-bottom: 20px;
   padding-top: 105px;
+
+  @media @min-sm{
+    min-height: 530px;
+  }
 
   @media @min-lg{
     margin-bottom: 110px;
@@ -10,16 +13,26 @@
 
   &__inner{
     position: relative;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
+
     z-index: 1;
+
+    @media @min-smx{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
   }
   &__body{
     max-width: 570px;
-    padding: 0 30px 0 0;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    @media @min-smx{
+      margin-top: 30px;
+      margin-bottom: 0;
+      padding: 0 30px 0 0;
+      text-align: left;
+    }
 
     @media @min-md{
       margin-top: 80px;

@@ -55,13 +55,21 @@
 }
 
 .section-subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
   color: #3f3b3b;
   line-height: 1;
 
+  &_mt_up{
+    margin-top: -25px;
+  }
+
   @media @min-md{
     margin-bottom: 50px;
+
+    &_mt_up{
+      margin-top: 0;
+    }
   }
 }
 

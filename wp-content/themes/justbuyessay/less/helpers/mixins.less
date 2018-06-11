@@ -139,3 +139,11 @@ _________________________________________________________
 
   .items(@icon, @color, @n, (@i + 1));
 }
+
+.nth-items(@n, @i: 1) when (@i =< @n) {
+  &:nth-child(@{i}) {
+    transition-delay: (0.56 - (@i * 0.07))s;
+  }
+
+  .nth-items(@n, (@i + 1));
+}

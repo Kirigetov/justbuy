@@ -22,24 +22,36 @@
     @media @min-sm {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-between;
+      justify-content: center;
       margin: 0 -15px;
+    }
+    @media @min-md {
+      justify-content: space-between;
     }
   }
 
   &__col {
-    padding: 15px 0;
+    padding: 15px 10px;
     text-align: center;
 
     @media @min-sm{
+      flex: 1 0 50%;
       margin-bottom: 0;
-      padding: 0 0 25px;
+      padding: 0 10px 25px;
       text-align: left;
+
+      &:last-child{
+        flex: 0 0 auto;
+      }
     }
 
     @media @min-md{
       flex: 1 0 33.3%;
       padding: 10px 15px 20px;
+
+      &:last-child{
+        flex: 1 0 33.3%;
+      }
     }
   }
 }
@@ -52,9 +64,13 @@
 
 .footer-item{
   height: 100%;
-  padding: 20px 24px;
+  padding: 15px 18px;
   background: rgba(255, 255, 255, 0.5);
   border-radius: 6px;
+
+  @media @min-lg{
+    padding: 20px 24px;
+  }
 
   &__half{
     &:not(:last-child){
@@ -63,12 +79,17 @@
   }
 
   &__title{
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+
+    @media @min-lg{
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
   }
 }
 
@@ -118,13 +139,17 @@
   }
 }
 
-.social-links{
+.social-links {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 0;
-}
+  padding-top: 5px;
 
+  @media @min-lg {
+    padding-top: 0;
+  }
+}
 .social-link{
   position: relative;
   display: inline-block;
@@ -134,13 +159,14 @@
   margin: 0 15px;
 
   .icon-svg{
-    max-width: 46px;
-    max-height: 46px;
+    max-width: 40px;
+    max-height: 40px;
+
+    @media @min-lg{
+      max-width: 46px;
+      max-height: 46px;
+    }
   }
-
-  //&:hover{
-
-  //}
 }
 
 .footer-contacts{
@@ -166,16 +192,26 @@
     padding: 10px;
 
     .icon-svg{
-      max-width: 70px;
-      max-height: 40px;
+      max-width: 60px;
+      max-height: 34px;
+      @media @min-lg{
+        max-width: 70px;
+        max-height: 40px;
+      }
     }
   }
 
   &_guarantees{
     .icon-svg{
       margin-right: 5px;
-      max-width: 40px;
       fill: #474747;
+      max-width: 30px;
+      max-height: 34px;
+
+      @media @min-lg{
+        max-width: 40px;
+        max-height: 40px;
+      }
     }
     .footer-box{
       display: flex;
@@ -186,10 +222,17 @@
 }
 
 .footer-box{
-  padding: 12px 18px;
+  padding: 10px 12px;
   border-radius: 6px;
   line-height: 1;
   background: rgba(255, 255, 255, 0.5);
+
+  @media @min-sm{
+    padding: 12px 8px;
+  }
+  @media @min-lg{
+    padding: 12px 18px;
+  }
 
   &__title{
     display: inline-block;

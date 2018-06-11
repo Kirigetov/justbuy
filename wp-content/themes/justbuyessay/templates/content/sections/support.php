@@ -2,7 +2,7 @@
 <section class="section">
     <div class="center">
         <div class="section-title section-title_mb_sm section-title_green">24/7 Customer Support</div>
-        <div class="section-subtitle">Be sure that you get answers to all your questions at any time.</div>
+        <div class="section-subtitle section-subtitle_mt_up">Be sure that you get answers to all your questions at any time.</div>
 
         <div class="support-items">
             <div class="support-item">

@@ -78,10 +78,12 @@
 }
 
 .section-cols{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  @media @min-smx{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .section-col{
