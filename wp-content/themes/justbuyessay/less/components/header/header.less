@@ -10,19 +10,21 @@
   transition-delay: 0.2s;
   height: 60px;
 
+  @media @min-sm{
+    transition: all .3s ease-out;
+  }
   @media @min-md {
-    //transition: height .2s;
     height: 85px;
   }
 
-  &.is-small{
+  & > .center{
+    height: 100%;
+  }
+
+  &.is-scroll{
+    height: 60px;
     background: fade(@blue, 90%);
-
     @media @min-md {
-      .header__inner {
-        height: 60px;
-      }
-
       .header__logo{
         max-width: 95px;
       }
@@ -35,18 +37,28 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: height .5s;
+      height: 100%;
     }
   }
 
   &__logo{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: max-width .2s;
-    max-width: 130px;
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    max-width: 70px;
 
     @media @min-sm{
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      transition: max-width .2s;
       max-width: 130px;
     }
 
@@ -67,11 +79,24 @@
     }
   }
 
+  &__order{
+    padding: 0 40px;
+
+    @media @min-sm{
+      padding: 0;
+    }
+  }
+
   &__nav{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    padding-top: 20px;
+
+    @media @min-sm{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 0;
+    }
   }
 }
 
@@ -79,9 +104,9 @@
   #of-widgets-login-tooltip {
     .of-widgets-open-tooltip{
       display: inline-block;
-      padding: 7px 21px 5px;
+      padding: 11px 24px 9px;
       border: 2px solid white;
-      border-radius: 15px;
+      border-radius: 20px;
       box-shadow: 1.9px 3.5px 4px rgba(20, 51, 154, 0.24);
       background: none;
       font-size: 0;
@@ -95,6 +120,11 @@
         font-size: 14px;
         line-height: 1;
         text-transform: uppercase;
+      }
+
+      @media @min-sm{
+        padding: 7px 21px 5px;
+        border-radius: 15px;
       }
     }
   }

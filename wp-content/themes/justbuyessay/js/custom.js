@@ -51,7 +51,7 @@ $(document).ready(function () {
     //-------------------------------------------------
     (function ($) {
         var fixedItem = $('.js-header'),
-            fixedClass = 'is-small',
+            fixedClass = 'is-scroll',
             minMarginTop;
 
         if (fixedItem.size()) {
@@ -297,10 +297,12 @@ $(document).ready(function () {
     //mobile menu dropdown
     (function(){
         var burger = document.querySelector('.js-burger'),
-            header = document.querySelector('.js-header');
+            header = document.querySelector('.js-header'),
+            body   = document.querySelector('body');
 
         burger.onclick = function() {
             // this.classList.toggle('is-active');
+            body.classList.toggle('fixed');
             header.classList.toggle('menu-opened');
         }
     }());
