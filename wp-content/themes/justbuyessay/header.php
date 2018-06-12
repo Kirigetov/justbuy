@@ -35,11 +35,13 @@
             <div class="header__inner">
                 <!--  mob-menu btn  -->
                 <div class="mob-item">
-                    <button class="hamburger hamburger--spin js-burger" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
+                    <div class="burger-container js-burger">
+                        <div id="burger">
+                            <div class="bar topBar"></div>
+                            <div class="bar btmBar"></div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="header__logo">
@@ -48,18 +50,14 @@
 
                 <div class="header__nav">
                     <div class="header-menu">
-                        <div class="header-menu__inner">
-                            <nav class="main-nav" id="nav">
-                                <?php
-                                $nav_args = array(
-                                    'theme_location'	=> 'header-nav',
-                                    'container'			=> '',
-                                    'depth'				=> 1
-                                );
-                                wp_nav_menu( $nav_args );
-                                ?>
-                            </nav>
-                        </div>
+                        <?php
+                        $nav_args = array(
+                            'theme_location'	=> 'header-nav',
+                            'container'			=> '',
+                            'depth'				=> 1
+                        );
+                        wp_nav_menu( $nav_args );
+                        ?>
                     </div>
 
                     <?php if (!is_page('order', 'preview')) : ?>
@@ -72,13 +70,13 @@
 
                 </div>
 
-                <div class="mob-item">
-                    <a class="mob-order js-burger" type="button">
-                        <svg class="icon-svg icon-cart">
-                            <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-inline.svg#cart"></use>
-                        </svg>
-                    </a>
-                </div>
+<!--                <div class="mob-item">-->
+<!--                    <a href="/order" class="mob-order">-->
+<!--                        <svg class="icon-svg icon-cart">-->
+<!--                            <use xlink:href="--><?php //bloginfo('template_url'); ?><!--/img/sprite-svg-inline.svg#cart"></use>-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </div>-->
             </div>
         </div>
     </header>

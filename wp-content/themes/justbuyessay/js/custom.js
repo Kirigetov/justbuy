@@ -300,7 +300,7 @@ $(document).ready(function () {
             header = document.querySelector('.js-header');
 
         burger.onclick = function() {
-            this.classList.toggle('is-active');
+            // this.classList.toggle('is-active');
             header.classList.toggle('menu-opened');
         }
     }());

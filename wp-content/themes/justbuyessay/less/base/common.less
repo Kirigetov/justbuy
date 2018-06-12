@@ -24,13 +24,16 @@ body {
 }
 
 .out{
-  display: flex;
-  flex-direction: column;
-  min-width: 300px;
-  max-width: 100%;
-  width: 100%;
-  min-height: 100vh;
-  height: 100vh;
+
+  @media @min-sm{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+  }
 }
 
 h1, h2, h3, .h1, .h2, .h3,

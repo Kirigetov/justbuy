@@ -4,14 +4,21 @@
   left: 0;
   right: 0;
   z-index: 10;
-  transition: background .2s;
   background-color: rgba(255,255,255, 0.22);
+  overflow: hidden;
+  transition: all 0.5s ease-out, background 1s ease-out;
+  transition-delay: 0.2s;
+  height: 60px;
+
+  @media @min-md {
+    //transition: height .2s;
+    height: 85px;
+  }
 
   &.is-small{
     background: fade(@blue, 90%);
 
     @media @min-md {
-
       .header__inner {
         height: 60px;
       }
@@ -23,15 +30,12 @@
   }
 
   &__inner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: height .2s;
-    height: 60px;
-
     @media @min-md {
-      height: 85px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: height .5s;
     }
   }
 
