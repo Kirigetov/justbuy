@@ -70,13 +70,13 @@
 
                 </div>
 
-<!--                <div class="mob-item">-->
-<!--                    <a href="/order" class="mob-order">-->
-<!--                        <svg class="icon-svg icon-cart">-->
-<!--                            <use xlink:href="--><?php //bloginfo('template_url'); ?><!--/img/sprite-svg-inline.svg#cart"></use>-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </div>-->
+                <div class="mob-item mob-item_order">
+                    <a href="/order" class="mob-order">
+                        <svg class="icon-svg icon-bag">
+                            <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-inline.svg#bag"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </header>

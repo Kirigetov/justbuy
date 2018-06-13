@@ -1,9 +1,11 @@
 .support-items{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  padding-bottom: 20px;
+  @media @min-smx{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
 
   @media @min-md{
     flex-flow: row nowrap;
@@ -19,13 +21,19 @@
 .support-item{
   padding: 0 20px;
   height: 100%;
+  text-align: center;
+  &:not(:first-child){
+    margin-top: 20px;
+  }
 
   &:nth-child(1){
     margin: 0 auto 20px;
-    flex: 1 0 100%;
     text-align: center;
     img{
       max-width: 280px;
+    }
+    @media @min-smx {
+      flex: 1 0 100%;
     }
     @media @min-md {
       order: 2;
@@ -39,16 +47,21 @@
   }
 
   &:nth-child(2){
-    text-align: right;
-    flex: 0 0 50%;
+    @media @min-smx {
+      text-align: right;
+      flex: 0 0 50%;
+    }
     @media @min-md {
       order: 1;
     }
   }
 
   &:nth-child(3){
-    text-align: left;
-    flex: 0 0 50%;
+    @media @min-smx {
+      text-align: left;
+      flex: 0 0 50%;
+    }
+
     @media @min-md{
       order: 3;
     }
@@ -69,10 +82,13 @@
 .support{
   &__title{
     margin-bottom: 20px;
-    font-size: 48px;
+    font-size: 38px;
     line-height: 1;
     color: #df543b;
 
+    @media @min-sm{
+      font-size: 48px;
+    }
     @media @min-lg{
       font-size: 56px;
     }

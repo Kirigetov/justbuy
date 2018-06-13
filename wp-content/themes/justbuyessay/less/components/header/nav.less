@@ -42,8 +42,27 @@
   @media @min-md{
     display: none;
   }
+
+  &_order{
+    position: absolute;
+    top: 7px;
+    right: 0;
+  }
 }
 
+.mob-order{
+  display: inline-block;
+  padding: 10px;
+
+  .icon-svg{
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+    transform: translateX(0px);
+    transition: transform 0.5s @cubic;
+    transition-delay: 0.65s;
+  }
+}
 
 .burger-container {
   position: relative;
@@ -113,7 +132,7 @@
           }
         }
       }
-      .icon {
+      .icon-svg {
         &.icon-bag {
           transform: translateX(75px);
           transition-delay: 0.3s;
