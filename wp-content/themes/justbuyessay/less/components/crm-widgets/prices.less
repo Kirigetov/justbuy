@@ -1,50 +1,227 @@
-[data-crm-widget="prices"] {
-  .prices-format-container,
-  .prices-total-price-container,
-  .prices-order-btn-container,
-  .prices-currency-items-container {
-    display: none;
-  }
+.page-price{
+  #prices-wrapper{
+    font-family: @ave-reg;
 
-  #prices-wrapper {
-    .select-text-label,
-    .price-table-control span {
-      display: block;
+    .select-text-label{
+      display: inline-block;
+      margin-right: 5px;
+      font-size: 15px;
+      font-family: @ave-med;
     }
 
-    .select-text-label {
-      margin: 0 0 5px;
-    }
+    .price-table-control {
+      > div {
+        &:first-child {
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 1px;
+            right: 1px;
+            width: 40px;
+            height: 38px;
+            border-radius: 6px;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0i0KHQu9C+0LlfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSI3LjJweCIgaGVpZ2h0PSIxNC40cHgiIHZpZXdCb3g9IjAgMCA3LjIgMTQuNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNy4yIDE0LjQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggaWQ9ItCc0L3QvtCz0L7Rg9Cz0L7Qu9GM0L3QuNC6XzFf0LrQvtC/0LjRjyIgZmlsbD0iIzFGMkIzRiIgZD0iTTMuNiwwTDAsNS40aDcuMkwzLjYsMHoiLz4NCjxwYXRoIGlkPSLQnNC90L7Qs9C+0YPQs9C+0LvRjNC90LjQul8xX9C60L7Qv9C40Y9fMV8iIGZpbGw9IiMxRjJCM0YiIGQ9Ik0zLjYsMTQuNEw3LjIsOUwwLDlMMy42LDE0LjR6Ii8+DQo8L3N2Zz4NCg==');
+          }
+        }
+      }
+      select {
+        height: 40px;
+        padding: 5px 12px !important;
+        background-color: #fff;
+        border: 1px solid #dde6fe;
+        border-radius: 6px;
+        -webkit-appearance: none;
+        text-indent: 0;
+      }
 
-    .prices-spinner-container {
+      .prices-spinner-container {
+        .prices-btn-spinner-left,
+        .prices-btn-spinner-right{
+          background-color: #dde6fe;
+          font-size: 15px;
+          color: #404040;
+          font-family: @ave-med;
+          transition: background-color .3s;
 
-      .prices-btn-spinner-left,
-      .prices-btn-spinner-right {
-        background: @yellow;
-        color: @text_dark;
+          &:hover{
+            background-color: darken(#dde6fe, 10%);
+          }
+        }
+        .prices-btn-spinner-left{
+          border-radius: 6px 0 0 6px;
+          font-size: 0;
+          &:after{
+            content: '\2013';
+            font-size: 15px;
+          }
+        }
+
+        .prices-spinner-input{
+          background-color: #fff;
+          border: 1px solid #dde6fe;
+        }
+
+        .prices-btn-spinner-right{
+          border-radius: 0 6px 6px 0;
+        }
+      }
+      .prices-currency-menu-btn,
+      .prices-currency-item{
+        background-color: #fff;
+        border: 1px solid #dde6fe;
+        border-radius: 6px;
+        font-size: 15px;
+        font-family: @ave-med;
+        color: #404040;
+        transition: background-color .3s;
+        &.active{
+          background-color: #dde6fe;
+        }
+
+        &:focus,
+        &:hover{
+          background-color: #dde6fe;
+        }
       }
     }
-
-    .price-table {
-      .urgency-cell {
-        background: none;
-      }
-    }
-
-    .price-table-control select,
-    .prices-spinner-container .prices-spinner-input,
-    .price-table-content tr:nth-child(even) {
-      background: #ecedef;
-    }
-
 
     .price-table-content {
-      border-top: 1px solid #dedede;
+      margin: 40px 0;
+      border-top-color: #5077f6;
+      border-bottom-color: #5077f6;
+      tr:nth-child(even){
+        background-color: #dde6fe;
+      }
+
+
+      thead tr:first-child td,
+      td a,
+      td{
+        font-size: 15px;
+        color: #404040;
+      }
     }
 
-    .price-table-content tbody tr td:nth-of-type(2),
-    .price-table-content thead tr td:nth-of-type(2),{
-      box-shadow: none;
+    .selected-price a,
+    .selected-urgency{
+      font-weight: bold;
+      color: darken(#82cb87, 20%) !important;
+    }
+
+    .pricing-tables{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+
+    .price-table{
+      width: 100%;
+    }
+
+    .prices-format-container{
+      display: flex;
+      flex: 0 1 470px;
+      flex-flow: row nowrap;
+      align-items: center;
+      float: none;
+      margin-left: 0;
+      border: 1px solid #dde6fe;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #f2f8fe;
+      font-size: 0;
+
+      .prices-format-left{
+        flex: 1 0 165px;
+        float: none;
+        width: auto;
+        line-height: 1;
+        font-size: 20px;
+        color: #404040;
+        font-family: @ave-med;
+      }
+
+      .prices-format-right{
+        flex: 0 0 300px;
+        width: auto;
+        height: 100%;
+        float: none;
+        background: #fff;
+      }
+    }
+
+    .prices-format-item{
+      padding-left: 30px;
+      font-size: 15px;
+      font-family: @ave-med;
+      line-height: 1.6;
+      color: #404040;
+      &:before{
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-left-color: #dde6fe;
+        border-left-width: 10px;
+        transform: none;
+      }
+      &:after{
+        content: none;
+      }
+    }
+
+    .prices-total-price-container{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      max-width: 260px;
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      margin-left: auto;
+      margin-bottom: 75px;
+      margin-right: 0;
+      border: 2px solid #5077f6;
+      border-radius: 6px;
+      float: none;
+    }
+
+    .prices-order-btn-container{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 260px;
+      width: 100%;
+    }
+
+    .prices-order-now-btn{
+      max-width: 260px;
+      width: 100%;
+    }
+
+    .prices-total-price-text{
+      margin-top: 0;
+      font-size: 20px;
+      font-family: @ave-bold;
+      color: #82cb87;
+    }
+
+    .prices-total-pages{
+      font-size: 15px;
+      color: #404040;
+    }
+
+    .prices-price-sum{
+      padding-top: 7px;
+      font-size: 24px;
+      line-height: 1;
+      color: #404040;
     }
   }
 }
+
