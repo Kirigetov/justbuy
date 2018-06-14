@@ -10,6 +10,7 @@
     }
 
     .price-table-control {
+      width: 100%;
       > div {
         &:first-child {
           position: relative;
@@ -91,7 +92,7 @@
     }
 
     .price-table-content {
-      margin: 40px 0;
+      margin: 10px 0 40px;
       border-top-color: #5077f6;
       border-bottom-color: #5077f6;
       tr:nth-child(even){
@@ -159,7 +160,7 @@
       padding-left: 30px;
       font-size: 15px;
       font-family: @ave-med;
-      line-height: 1.6;
+      line-height: 1.8;
       color: #404040;
       &:before{
         width: 0;
@@ -182,13 +183,18 @@
       max-width: 260px;
       width: 100%;
       height: auto;
-      padding: 15px;
+      padding: 8px 15px 9px;
       margin-left: auto;
       margin-bottom: 75px;
       margin-right: 0;
       border: 2px solid #5077f6;
       border-radius: 6px;
       float: none;
+    }
+
+    .prices-items-container{
+      height: 100%;
+      padding: 17px 10px;
     }
 
     .prices-order-btn-container{
@@ -202,6 +208,10 @@
     .prices-order-now-btn{
       max-width: 260px;
       width: 100%;
+      background-color: #82cb87;
+      border-radius: 6px;
+      font-size: 16px;
+      font-family: @ave-med;
     }
 
     .prices-total-price-text{
@@ -225,3 +235,84 @@
   }
 }
 
+.price-factors{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+
+  &__col{
+    flex: 1 0 50%;
+    &:first-child{
+      padding-right: 20px;
+    }
+    &:last-child{
+      padding-left: 20px;
+    }
+  }
+
+  &__item{
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+  &__item-title{
+    margin-bottom: 5px;
+    padding-left: 30px;
+    font-family: @ave-bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4e75f3;
+  }
+  &__item-body{
+    font-size: 18px;
+    font-weight: 500;
+    color: #474747;
+  }
+  &__img{
+    max-width: 500px;
+  }
+}
+
+.price-features{
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0;
+  &__col{
+    flex: 1 0 50%;
+    padding: 0 15px;
+  }
+}
+
+.price-feature{
+  padding: 35px 70px;
+  border-radius: 10px;
+  background-color: #edf3ff;
+
+  &__title{
+    margin-bottom: 20px;
+    font-family: @ave-bold;
+    font-size: 20px;
+    color: #474747;
+    text-transform: uppercase;
+  }
+  &__list{
+    list-style-type: none;
+  }
+
+  &__list-item{
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #474747;
+
+    &:before{
+      content: '';
+      display: inline-block;
+      //.svg(@checkpoint);
+      width: 22px;
+      height: 21px;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHdpZHRoPSIxNjAuN3B4IiBoZWlnaHQ9IjEzMS41cHgiIHZpZXdCb3g9IjAgMCAxNjAuNyAxMzEuNSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTYwLjcgMTMxLjUiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiM4MkNCODciIGQ9Ik0xMzYuNSwwTDQ2LjIsOTAuM2wtMjIuMS0yMkwwLDkyLjRsMzQuMSwzNC4xYzMuMywzLjMsNy43LDUsMTIuMSw1czguNy0xLjcsMTIuMS01TDE2MC43LDI0LjFMMTM2LjUsMHoiDQoJCQkvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K');
+      background-repeat: no-repeat;
+    }
+  }
+}
