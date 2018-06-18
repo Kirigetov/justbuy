@@ -132,3 +132,103 @@
   }
 }
 
+.e-collector_row{
+  position: relative;
+  background-color: @green;
+  overflow: hidden;
+
+  & > .center{
+    position: relative;
+    z-index: 2;
+  }
+
+  .e-collector__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      opacity: 0.5;
+      height: 150px;
+      background-image: url(img/file-pencil.svg);
+      background-repeat: repeat-x;
+      overflow: hidden;
+    }
+    &:before {
+      top: 0;
+      margin: -20px 0 0 0;
+      background-size: 190px 150px;
+    }
+    &:after{
+      bottom: 0;
+      margin: 0 0 -20px 0;
+      background-size: 190px 150px;
+      transform: translate(90px, 0);
+    }
+  }
+
+  .e-collector__inner{
+    @media @min-md{
+      display: block;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px 0;
+      background: @green;
+    }
+  }
+
+  .e-collector__descr{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+
+  .e-collector__item{
+    &:nth-child(1){
+      max-width: none;
+      margin: 0 auto 30px;
+      z-index: auto;
+    }
+
+    &:nth-child(2){
+      max-width: none;
+      margin: 0 auto;
+      z-index: auto;
+    }
+  }
+
+  #widget-email-collector{
+    form{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .form-group{
+      flex: 0 1 320px;
+      margin-right: 20px;
+    }
+
+    .collector-select-container{
+      height: 50px;
+    }
+
+    #collectorform-email{
+      height: 50px !important;
+    }
+    .collector-continue-btn{
+      flex: 0 1 220px;
+      margin: 0;
+      background-color: #df543b !important;
+    }
+  }
+}

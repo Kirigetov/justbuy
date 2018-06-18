@@ -20,7 +20,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section_sm">
             <div class="center">
 
                 <div class="section-header">
@@ -114,9 +114,8 @@
             </div>
         </section>
 
-        <div class="btn-wrap btn-wrap_mt">
-            <a href="/order" class="btn btn_orange btn-lg btn-hover js-btn-hover">MAKE ORDER</a>
-        </div>
+        <?php get_template_part( 'templates/crm-widgets/email-collector2');?>
+
     </main>
     <!--end main-->
 
