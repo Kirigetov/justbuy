@@ -25,10 +25,14 @@
 
                 <div class="section-header">
                     <div class="section-title section-title_blue">Why do our prices vary?</div>
-                    <div class="section-subtitle section-subtitle_mt_up">There are several factors that determine pricing</div>
+                    <div class="section-subtitle">There are several factors that determine pricing</div>
                 </div>
 
                 <div class="price-factors">
+                    <div class="price-factors__col">
+                        <img class="price-factors__img" src="<?php bloginfo('template_url'); ?>/img/bill.svg" alt="">
+                    </div>
+
                     <div class="price-factors__col">
                         <ul class="price-factors__list">
                             <li class="price-factors__item">
@@ -53,9 +57,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="price-factors__col">
-                        <img class="price-factors__img" src="<?php bloginfo('template_url'); ?>/img/bill.svg" alt="">
-                    </div>
                 </div>
             </div>
         </section>
@@ -65,14 +66,14 @@
 
                 <div class="section-header">
                     <div class="section-title section-title_blue">WHAT’S IN IT FOR YOU</div>
-                    <div class="section-subtitle section-subtitle_mt_up">Check out what features we offer to keep our customers comfortable.</div>
+                    <div class="section-subtitle">Check out what features we offer to keep our customers comfortable.</div>
                 </div>
 
                 <div class="price-features">
                     <div class="price-features__col">
                         <div class="price-feature">
                             <div class="price-feature__title">Basic Services</div>
-                            <ul class="price-feature__list">
+                            <ul class="price-feature__list price-feature__list_basic">
                                 <li class="price-feature__list-item">FREE preferred helper</li>
                                 <li class="price-feature__list-item">Instant matching with an expert</li>
                                 <li class="price-feature__list-item">3-hour turnaround for urgent requests</li>
@@ -86,7 +87,7 @@
                     <div class="price-features__col">
                         <div class="price-feature">
                             <div class="price-feature__title">Optional Features</div>
-                            <ul class="price-feature__list">
+                            <ul class="price-feature__list price-feature__list_add">
                                 <li class="price-feature__list-item price-feature__list-item_flex">
                                     <span>Top helper </span>
                                     <span>$14,99</span>
