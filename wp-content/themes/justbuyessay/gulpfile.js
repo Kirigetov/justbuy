@@ -73,7 +73,7 @@ gulp.task('less', function () {
 //TASK: gulp js
 //--------------------------------------------------
 gulp.task('js', function() {
-    gulp.src(['./js/libs/**/*.js', './js/custom.js'])
+    gulp.src(['./js/libs/**/*.js', './js/components/**/*.js', './js/custom.js'])
         .pipe(plumber())
         .pipe(!is_prod ? sourcemaps.init() : util.noop())
         .pipe(concat('./scripts.min.js'))

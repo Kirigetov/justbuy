@@ -136,39 +136,6 @@ $(document).ready(function () {
     //         ]
     //     });
     // }
-    //
-    // if($('.js-review-round-slider').length){
-    //     if (window.matchMedia("(max-width: 1023px)").matches) {
-    //         $('.js-review-round-slider').slick({
-    //             dots: false,
-    //             arrows: true,
-    //             infinite: false,
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1,
-    //             responsive: [
-    //                 {
-    //                     breakpoint: 760,
-    //                     settings: {
-    //                         arrows: false,
-    //                         dots: true
-    //                     }
-    //                 }
-    //             ]
-    //         });
-    //     }
-    // }
-    //
-    // if($('.js-slider-guarantees').length){
-    //     if (window.matchMedia("(max-width: 800px)").matches) {
-    //         $('.js-slider-guarantees').slick({
-    //             dots: true,
-    //             arrows: false,
-    //             infinite: false,
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1
-    //         });
-    //     }
-    // }
 
 
     /*------------------------------
@@ -251,48 +218,6 @@ $(document).ready(function () {
     //     }
     // })();
 
-    //menu
-    // (function ( $ ) {
-    //
-    //     $.fn.sidenav = function( status ) {
-    //         var side = $( this );
-    //
-    //         if ( status == 'open') {
-    //             open( side );
-    //             $(".js-overlay").fadeIn(500);
-    //             $("body").addClass( 'is-hidden' );
-    //         } else if ( status == 'close' ) {
-    //             close( side );
-    //             $(".js-overlay").fadeOut(500);
-    //             $("body").removeClass( 'is-hidden' );
-    //
-    //         }
-    //     };
-    //
-    //     var open = function ( obj ) {
-    //         obj.addClass( 'open' );
-    //     }
-    //
-    //     var close = function ( obj ) {
-    //         obj.removeClass( 'open' );
-    //     }
-    //
-    // }( jQuery ));
-    //
-    // var sidenavMain = $("#sidenavMain");
-    //
-    //
-    // $('#openNavMain').on('click', function () {
-    //     sidenavMain.sidenav('open');
-    // });
-    //
-    // $('#closeNavMain').on('click', function () {
-    //     sidenavMain.sidenav('close');
-    // });
-    //
-    // $('.js-overlay').on('click', function () {
-    //     sidenavMain.sidenav('close');
-    // });
 
     //mobile menu dropdown
     (function(){
