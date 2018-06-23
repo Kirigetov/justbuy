@@ -2,9 +2,9 @@
 
 $config = [
     'track' => [
-        'trackApiKey' => '1',
+        'trackApiKey' => '1458cb17d59126fe69e75552d727a5a2',
     ],
     'widgets' => [
-        'widgetsApiKey' => '89ce9c258f47eb0d9fe36a6329758bb8',
+        'widgetsApiKey' => '74b778c6e2e99c8704791005652e2a87',
     ],
 ];

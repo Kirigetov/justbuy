@@ -1,51 +1,33 @@
 
 $(document).ready(function () {
-    //SLICKNAV MENU
-    //-------------------------------------------------
-    (function($){
-        $('#nav').slicknav({prependTo: '#mobile_nav'});
-
-        //create additional menu near slicknav menu
-        $('#mobile_nav').find('.mobile-nav-show').prependTo('#mobile_nav').wrapAll('<ul class="mobile-nav-visible" />');
-
-        //close slicknav menu after click outside an element
-        $(document).on('click', function(event) {
-            if(!$(event.target).closest('.slicknav_menu').length && !$(event.target).is('.slicknav_menu')) {
-                if($('.slicknav_open').size()) {
-                    $('#nav').slicknav('close');
-                }
-            }
-        })
-    })(jQuery);
-
 
     //SCROLL TOP BUTTON
     //-------------------------------------------------
-    (function($){
-        var findWindowHeight = function(){
-            return windowHeight = $(window).height();
-        };
-
-        var addScrollButton = function(){
-            if ($(window).scrollTop() > windowHeight && !$('#scrollButton').size()) {
-                var scrollButton = '<div id="scrollButton" class="scroll-button"/>';
-                $('body').append(scrollButton);
-            }else if($(window).scrollTop() < windowHeight && $('#scrollButton').size()){
-                $('#scrollButton').remove();
-            }
-        };
-
-        var scrollPage = function(){
-            $('body, html').animate({scrollTop : 0}, 800);
-        };
-
-        var windowHeight = findWindowHeight();
-
-        $(window).scroll(addScrollButton);
-        $(window).resize(findWindowHeight);
-
-        $('body').on('click', '#scrollButton', scrollPage);
-    })(jQuery);
+    // (function($){
+    //     var findWindowHeight = function(){
+    //         return windowHeight = $(window).height();
+    //     };
+    //
+    //     var addScrollButton = function(){
+    //         if ($(window).scrollTop() > windowHeight && !$('#scrollButton').size()) {
+    //             var scrollButton = '<div id="scrollButton" class="scroll-button"/>';
+    //             $('body').append(scrollButton);
+    //         }else if($(window).scrollTop() < windowHeight && $('#scrollButton').size()){
+    //             $('#scrollButton').remove();
+    //         }
+    //     };
+    //
+    //     var scrollPage = function(){
+    //         $('body, html').animate({scrollTop : 0}, 800);
+    //     };
+    //
+    //     var windowHeight = findWindowHeight();
+    //
+    //     $(window).scroll(addScrollButton);
+    //     $(window).resize(findWindowHeight);
+    //
+    //     $('body').on('click', '#scrollButton', scrollPage);
+    // })(jQuery);
 
     //FIXED HEADER
     //-------------------------------------------------
@@ -83,142 +65,6 @@ $(document).ready(function () {
         }
     })(jQuery);
 
-    /*------------------------------
-     SLICK SLIDER - HOW ABOUT IT
-     ------------------------------*/
-    // if($('.js-slider-reviews').length){
-    //     if (window.matchMedia("(max-width: 1023px)").matches) {
-    //         $('.js-slider-reviews').slick({
-    //             dots: true,
-    //             arrows: false,
-    //             infinite: false,
-    //             slidesToShow: 1,
-    //             slidesToScroll: 1
-    //         });
-    //     }
-    // }
-    //
-    // if($('.js-items-cards').length){
-    //     if (window.matchMedia("(max-width: 1023px)").matches) {
-    //         $('.js-items-cards').each(function () {
-    //             $(this).slick({
-    //                 dots: true,
-    //                 arrows: false,
-    //                 infinite: false,
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1
-    //             });
-    //         })
-    //     }
-    // }
-
-    // if($('.js-review-slider').length){
-    //     $('.js-review-slider').slick({
-    //         dots: false,
-    //         arrows: true,
-    //         infinite: false,
-    //         slidesToShow: 1,
-    //         slidesToScroll: 1,
-    //         responsive: [
-    //             {
-    //                 breakpoint: 768,
-    //                 settings: {
-    //                     dots: true
-    //                 }
-    //             },
-    //             {
-    //                 breakpoint: 760,
-    //                 settings: {
-    //                     arrows: false,
-    //                     dots: true
-    //                 }
-    //             }
-    //         ]
-    //     });
-    // }
-
-
-    /*------------------------------
-     CONTENT-ACCORDION
-     ------------------------------*/
-    // (function($) {
-    //     if( $('.js-content-accordion').length ) {
-    //         var firstHeader = $('.js-content-accordion').find('[data-accordion=header]').first();
-    //
-    //         firstHeader.addClass('open');
-    //     }
-    //
-    //     $('[data-accordion=container]').on('click', accordionHandler);
-    //
-    //     function accordionHandler (e) {
-    //         var header = $(e.target).closest('[data-accordion=header]');
-    //
-    //         if ( header.length ) {
-    //             header.toggleClass('open');
-    //         }
-    //     }
-    //
-    // })(jQuery);
-
-
-    /*------------------------------
-     HOVER BTNS
-     ------------------------------*/
-    // function showHoverBtns(btnClass) {
-    //
-    //     var btns = document.querySelectorAll(btnClass);
-    //
-    //     btns.forEach(function (item) {
-    //
-    //         item.onmousemove = function (e) {
-    //
-    //             var x = e.pageX - item.offsetLeft - item.offsetParent.offsetLeft;
-    //             var y = e.pageY - item.offsetTop - item.offsetParent.offsetTop;
-    //             item.style.setProperty('--x', x + 'px');
-    //             item.style.setProperty('--y', y + 'px');
-    //         }
-    //     });
-    // }
-
-    // showHoverBtns('.js-btn-hover'); //for all btns but not for widget btns
-    //
-    // (function() {
-    //
-    //     if (document.querySelector('[data-crm-widget="simplePriceCalc"]')) {
-    //
-    //         var simpleCalcForm = document.querySelector('[data-crm-widget="simplePriceCalc"]');
-    //
-    //         simpleCalcForm.addEventListener('ready', function () {
-    //
-    //             var btnSubmit = simpleCalcForm.querySelector('.simple-calc__submit button');
-    //             btnSubmit.classList.add('btn-hover', 'js-btn-form-hover');
-    //
-    //             setTimeout(function () {
-    //                 showHoverBtns('.js-btn-form-hover');
-    //             }, 500);
-    //         });
-    //     }
-    // })();
-
-    // (function() {
-    //
-    //     if (document.querySelector('[data-crm-widget="discountPriceCalc"]')) {
-    //
-    //         var simpleCalcForm = document.querySelector('[data-crm-widget="discountPriceCalc"]');
-    //
-    //         simpleCalcForm.addEventListener('ready', function () {
-    //
-    //             var btnSubmit = simpleCalcForm.querySelector('.cw-order-button');
-    //             btnSubmit.classList.add('btn-hover', 'js-btn-form-hover');
-    //
-    //             setTimeout(function () {
-    //                 showHoverBtns('.js-btn-form-hover');
-    //             }, 1000);
-    //         });
-    //     }
-    // })();
-
-
     //mobile menu dropdown
     (function(){
         var burger = document.querySelector('.js-burger'),
@@ -231,5 +77,29 @@ $(document).ready(function () {
             header.classList.toggle('menu-opened');
         }
     }());
+
+    //select2 for widgets
+    if ($('[data-crm-widget="emailCollector"]').length) {
+        var eCollector = $('[data-crm-widget="emailCollector"]');
+        var windowWidth = window.outerWidth;
+
+        eCollector.on('ready', function () {
+            eCollector.find('#collectorform-type_of_work').select2({dropdownParent: $('.collector-select-container')});
+            if (windowWidth < 1025) {
+                $('#collectorform-type_of_work').on('select2:open', function () {
+                    $('.select2-search input').prop('focus',false);
+                });
+            }
+        });
+    }
 });
 
+// document.addEventListener('DOMContentLoaded', function () {
+//
+//     var emailCollector = document.querySelector('[data-crm-widget="emailCollector"]');
+//
+//     emailCollector.addEventListener('ready', function () {
+//         emailCollector.querySelector('#collectorform-type_of_work').select2();
+//
+//     });
+// });

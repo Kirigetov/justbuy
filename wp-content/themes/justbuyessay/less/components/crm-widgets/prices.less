@@ -523,11 +523,7 @@
   &__col{
     &:first-child{
       margin-bottom: 30px;
-      //padding-top: 20px;
       text-align: center;
-      img{
-        max-width: 280px;
-      }
     }
 
     @media @min-sm{
@@ -546,10 +542,6 @@
 
   &__item{
     margin-bottom: 20px;
-
-    @media @min-sm{
-      max-width: 500px;
-    }
   }
   &__item-title{
     margin-bottom: 5px;
@@ -565,7 +557,10 @@
     color: #474747;
   }
   &__img{
-    max-width: 450px;
+    max-width: 280px;
+    @media @min-sm{
+      max-width: 450px;
+    }
   }
 }
 

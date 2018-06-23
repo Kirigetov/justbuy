@@ -11,7 +11,7 @@
     <!--begin main-->
     <main class="page-content">
 
-        <section class="section">
+        <section class="section section_top-sm">
             <div class="center">
                 <div class="section-title section-title_blue">Price Table</div>
 
@@ -61,7 +61,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section_sm">
             <div class="center">
 
                 <div class="section-header">

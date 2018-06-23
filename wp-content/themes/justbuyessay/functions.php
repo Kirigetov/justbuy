@@ -21,6 +21,7 @@ function ox_adding_scripts() {
 		wp_enqueue_script('jquery');
 
 		/* all css */
+		wp_enqueue_style( 'select2', get_template_directory_uri() . '/css/libs/select2.min.css');
 		wp_enqueue_style( 'allStyles', get_template_directory_uri() . '/style.min.css');
 
         /* all js */
