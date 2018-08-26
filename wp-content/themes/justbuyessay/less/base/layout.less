@@ -26,8 +26,6 @@
 //.main{}
 
 .page-container{
-
-
   @media @min-lg{
     flex: 1;
   }
@@ -40,6 +38,10 @@
     }
   }
 }
+//
+//.page-how-it{
+//  padding-top: 300px;
+//}
 
 .section{
   position: relative;
@@ -50,11 +52,18 @@
   .padding(@min-lg, 80px, 0);
 
   &_top-sm{
-    .padding(@min-md, 80px, 0 40px);
+    padding: 80px 0 40px;
   }
 
   &_sm{
     .padding(@min-md, 40px, 0);
+  }
+
+  &_first_sm{
+    padding: 20px 0 40px;
+    @media @min-sm{
+      padding: 40px 0;
+    }
   }
 
   &_no_pad{

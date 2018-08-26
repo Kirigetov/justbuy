@@ -6,14 +6,35 @@
 
 <?php get_header(); ?>
 
+
+<div class="triangles-bg">
+    <svg class="icon-svg-par icon-svg-par_desktop icon-svg-hero_price_bg_2">
+        <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_price_bg_2"></use>
+    </svg>
+    <svg class="icon-svg-par icon-svg-par_desktop icon-svg-hero_price_bg_1">
+        <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_price_bg_1"></use>
+    </svg>
+    <svg class="icon-svg-par icon-svg-par_mob icon-svg-hero_price_mob_1">
+        <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_price_bg_mob"></use>
+    </svg>
+    <svg class="icon-svg-par icon-svg-par_mob icon-svg-par_reverse icon-svg-hero_price_mob_2">
+        <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_price_bg_mob"></use>
+    </svg>
+</div>
+
+<div class="hero hero_price has-triangles">
+    <div class="center hero__inner">
+        <div class="hero__title hero__title_blue section-title">price tables</div>
+    </div>
+</div>
+
 <div class="page-container page-price">
 
     <!--begin main-->
     <main class="page-content">
 
-        <section class="section section_top-sm">
+        <section class="section section_first_sm">
             <div class="center">
-                <div class="section-title section-title_blue">Price Table</div>
 
                 <?php get_template_part( './loop');?>
 

@@ -21,13 +21,19 @@ body {
   min-height: 100vh;
   height: 100vh;
   font-family: @ave-med;
-
+  overflow-x: hidden;
+  
   &.fixed{
     overflow: hidden;
   }
 }
 
 .out{
+  position: relative;
+
+  @media @max-xs{
+    overflow-x: hidden;
+  }
 
   @media @min-sm{
     display: flex;

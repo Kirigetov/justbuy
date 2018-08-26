@@ -133,7 +133,14 @@
 
 .e-collector_row{
   position: relative;
-  background-color: @green;
+  &.e-collector_green {
+    background-color: @green;
+
+    .e-collector__descr{
+      color: #fff;
+      background: @green;
+    }
+  }
 
   & > .center{
     position: relative;
@@ -189,9 +196,7 @@
 
   .e-collector__descr{
     text-align: center;
-    color: #fff;
     margin-bottom: 30px;
-    background: @green;
   }
 
   .e-collector__item{
@@ -240,7 +245,58 @@
     .collector-continue-btn{
       flex: 0 1 220px;
       margin: 0;
-      background-color: #df543b !important;
+      background-color: #ff5337 !important;
+    }
+  }
+}
+
+.e-collector_mod{
+  border-radius: 10px;
+  box-shadow: 8.9px 9.5px 9px rgba(0, 0, 0, 0.07);
+
+  .e-collector__bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: auto;
+      left: auto;
+      bottom: 10px;
+      width: 160px;
+      height: 160px;
+      background-image: url(img/tools.svg);
+      background-repeat: no-repeat;
+      background-size: 160px;
+      overflow: hidden;
+      opacity: 0.5;
+
+      @media @min-sm{
+        width: 200px;
+        height: 200px;
+        background-size: 200px;
+      }
+    }
+    &:before {
+      top: 0;
+      margin: 0;
+      transform: translateX(-20%);
+
+      @media @min-sm{
+        top: auto;
+      }
+    }
+    &:after{
+      right: 0;
+      margin: 0;
+      transform: translateX(50%);
     }
   }
 }
@@ -249,9 +305,7 @@
 
   .select2-container {
     &.select2-container--default {
-      &.select2-container--open{
-        width: 100%;
-      }
+      width: 100% !important;
     }
 
     .select2-selection--single{
@@ -286,7 +340,7 @@
     top: 3px;
   }
 
-    .select2-dropdown.select2-dropdown--above,
+  .select2-dropdown.select2-dropdown--above,
   .select2-dropdown.select2-dropdown--below{
     width: auto !important;
     left: 0 !important;
@@ -307,5 +361,17 @@
     @media  @min-sm{
       padding: 6px;
     }
+  }
+}
+
+.e-collector-wrap{
+  padding: 50px 0;
+
+  @media @min-sm{
+    padding: 100px 0;
+  }
+
+  @media @min-md{
+    padding: 150px 0;
   }
 }

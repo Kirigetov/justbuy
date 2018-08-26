@@ -3,23 +3,145 @@
 }
 
 .triangles-bg{
-  position: relative;
+  position: absolute;
+  max-width: 1920px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .icon-svg-par{
   position: absolute;
+  filter: drop-shadow(19px 17.7px 62px rgba(20, 51, 154, 0.35));
+  use{
+    width: 100%;
+  }
+
+  &_desktop{
+    display: none;
+
+    @media @min-sm{
+      display: block;
+    }
+  }
+
+  &_mob{
+    @media @min-sm{
+      display: none;
+    }
+  }
+
+  &_reverse{
+    transform: rotate(180deg);
+  }
 }
 
 //hero section
 .icon-svg-hero_bg_1{
-  left: -20px;
+  left: -70px;
   width: 100vw;
   z-index: 1;
-  filter: drop-shadow(19px 17.7px 62px rgba(20, 51, 154, 0.35));
 }
 
 .icon-svg-hero_bg_2{
-   right: 0;
-   z-index: 0;
-   filter: drop-shadow(19px 17.7px 62px rgba(20, 51, 154, 0.35));
- }
+  right: 0;
+  z-index: 0;
+}
+
+.icon-svg-hero_how_bg_1{
+  width: 100vw;
+  top: -160px;
+  right: 0;
+  transform: scale(-1);
+
+  @media @min-sm{
+    top: -190px;
+    right: 170px;
+    transform: none;
+  }
+  @media @min-md{
+    top: -160px;
+    right: 120px;
+  }
+
+  @media @min-lg{
+    width: 110vw;
+    right: 0;
+  }
+}
+.icon-svg-hero_how_bg_2{
+  width: 100vw;
+  top: -120px;
+  right: 0;
+
+  @media @min-sm{
+    width: 60vw;
+  }
+  @media @min-md{
+    width: 55vw;
+  }
+  @media @min-lg{
+    width: 40vw;
+  }
+}
+.icon-svg-hero_how_bg_3{
+  top: -225px;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+
+  @media @min-sm{
+    top: -185px;
+    transform: translateX(-56%);
+  }
+  @media @min-md{
+    top: -155px;
+    transform: translateX(-54%);
+  }
+  @media @min-lg{
+    top: -95px;
+    width: 120vw;
+    transform: translateX(-50%);
+  }
+}
+
+.icon-svg-hero_price_bg_1{
+  top: -120px;
+
+  @media @min-md{
+    top: -110px;
+  }
+  @media @max-md{
+    width: 100%;
+  }
+  @media @min-lg{
+    top: -55px;
+  }
+}
+
+.icon-svg-hero_price_bg_2{
+  top: -170px;
+
+  @media @max-md{
+    width: 100%;
+  }
+  @media @min-lg{
+    top: -120px;
+  }
+}
+
+
+.icon-svg-hero_price_mob_1,
+.icon-svg-hero_price_mob_2{
+  top: -210px;
+  width: 100vw;
+  height: 440px;
+}
+
+.icon-svg-hero_price_mob_1{
+  transform: rotate(-10deg);
+}
+
+.icon-svg-hero_price_mob_2{
+  transform: rotate(-170deg);
+}

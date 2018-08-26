@@ -22,11 +22,6 @@
 
         <!--begin main-->
         <main class="page-content">
-
-<!--            <svg class="icon-svg icon-school-material">-->
-<!--                <use xlink:href="--><?php //bloginfo('template_url'); ?><!--/img/sprite-svg-inline.svg#school-material"></use>-->
-<!--            </svg>-->
-
             <div class="center">
                 <div class="section-cols">
                     <?php get_template_part( 'templates/content/sections/reasons');?>
