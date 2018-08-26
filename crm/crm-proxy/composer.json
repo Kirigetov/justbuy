@@ -1,0 +1,17 @@
+{
+  "name": "govitall/crm-middleware-proxy",
+  "description": "PHP crm middleware proxy library",
+  "license": "proprietary",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Govitall team",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "crm\\middleware\\": ""
+    }
+  }
+}
