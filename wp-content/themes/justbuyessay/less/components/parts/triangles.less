@@ -40,6 +40,7 @@
 .icon-svg-hero_bg_1{
   left: -70px;
   width: 100vw;
+  height: 840px;
   z-index: 1;
 }
 
@@ -50,18 +51,19 @@
 
 .icon-svg-hero_how_bg_1{
   width: 100vw;
-  top: -160px;
-  right: 0;
-  transform: scale(-1);
+  top: -120px;
+  right: 30px;
+  transform: scale(-1) rotate(13deg);
 
   @media @min-sm{
-    top: -190px;
-    right: 170px;
-    transform: none;
+    top: -120px;
+    right: 140px;
+    transform: rotate(-20deg);
   }
   @media @min-md{
     top: -160px;
     right: 120px;
+    transform: none;
   }
 
   @media @min-lg{
@@ -71,11 +73,14 @@
 }
 .icon-svg-hero_how_bg_2{
   width: 100vw;
-  top: -120px;
-  right: 0;
+  top: -150px;
+  right: -10px;
+  transform: rotate(-6deg);
 
   @media @min-sm{
+    right: 0;
     width: 60vw;
+    transform: none;
   }
   @media @min-md{
     width: 55vw;

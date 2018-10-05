@@ -27,11 +27,6 @@
                     numbers are the result of your feedback and our strive to constant improvement.</div>
             </div>
         </div>
-
-        <div class="btn-wrap">
-            <a href="/order" class="cta-btn cta-btn_green">Place YOur Order</a>
-        </div>
-
     </div>
 </section>
 <!--  end support section  -->

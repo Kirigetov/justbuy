@@ -9,7 +9,7 @@
 <div class="triangles-bg">
 <!--    <img src="--><?php //bloginfo('template_url'); ?><!--/img/hero_bg_2.svg" alt="">-->
     <svg class="icon-svg-par icon-svg-hero_bg_1">
-        <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_bg_1"></use>
+        <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_bg_1_cloud"></use>
     </svg>
     <svg class="icon-svg-par icon-svg-hero_bg_2">
         <use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-svg-parallax.svg#hero_bg_2"></use>
@@ -33,9 +33,9 @@
             <?php get_template_part( 'templates/content/sections/support');?>
 <!--            --><?php //get_template_part( 'templates/crm-widgets/last-orders');?>
 <!--            --><?php //get_template_part( 'templates/content/reviews/reviews-block');?>
+            <?php get_template_part( 'templates/content/sections/writing-service');?>
             <?php get_template_part( 'templates/content/sections/content-accordion');?>
             <?php get_template_part( 'templates/crm-widgets/email-collector');?>
-
         </main>
         <!--end main-->
 

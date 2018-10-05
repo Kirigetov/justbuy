@@ -1,0 +1,43 @@
+.wr-service{
+  @media @min-md{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 25px;
+    }
+
+    @media @min-md{
+      &:not(:last-child){
+        flex: 1 0 50%;
+        order: 2;
+        margin-bottom: 25px;
+      }
+
+      &:last-child{
+        flex: 1 0 50%;
+        order: 1;
+      }
+    }
+  }
+
+  &__text{
+    margin-bottom: 25px;
+  }
+
+  &__btn{
+    display: block;
+    margin: 0 auto;
+
+    @media @min-md{
+      margin: 0;
+    }
+  }
+
+  &__img{
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}

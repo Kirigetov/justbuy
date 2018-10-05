@@ -97,7 +97,7 @@
         </div>
 
         <div class="btn-wrap">
-            <a href="/order" class="cta-btn cta-btn_red">order now</a>
+            <a href="/order" class="btn btn_red">order now</a>
         </div>
 
     </div>
