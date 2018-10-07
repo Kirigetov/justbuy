@@ -15,7 +15,7 @@
     }
   }
 
-  @media @min-sm{
+  @media @min-md{
     min-height: 530px;
   }
 
@@ -57,7 +57,7 @@
 
     z-index: 1;
 
-    @media @min-smx{
+    @media @min-md{
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
@@ -70,7 +70,7 @@
     text-align: center;
     @media @min-smx{
       margin-top: 30px;
-      margin-bottom: 0;
+      margin-bottom: 160px;
       padding: 0 20px 0 0;
       text-align: left;
     }
@@ -129,11 +129,16 @@
 
 .hero-man{
   position: absolute;
-  bottom: 0;
+  //bottom: 0;
+  top: 170px;
   left: 50%;
   transform: translate(-60%, 0);
 
-  @media @min-lg{
+  @media @min-sm{
+    transform: translate(-30%, 0);
+  }
+
+  @media @min-md{
     transform: translate(-50%, 0);
   }
 
