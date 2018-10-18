@@ -92,6 +92,43 @@ $(document).ready(function () {
             }
         });
     }
+
+    if($('.js-reviews').length) {
+
+        var revSlider = $('.js-reviews');
+
+        revSlider.on('init reInit', function(event, slick, currentSlide, nextSlide){
+            var
+                cur = $(slick.$slides[slick.currentSlide]),
+                next = cur.next(),
+                afterNext = next.next();
+
+            next.addClass('slick-snext');
+            afterNext.addClass('slick-afterNext');
+            cur.removeClass('slick-snext').removeClass('slick-afterNext');
+            slick.$prev = afterNext;
+            slick.$next = next;
+        }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+            var cur = $(slick.$slides[nextSlide]),
+                next = cur.next();
+
+            cur.removeClass('slick-snext');
+            next.removeClass('slick-afterNext').addClass('slick-snext');
+            cur.removeClass('slick-snext').removeClass('slick-afterNext');
+        });
+
+        revSlider.slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinity: false,
+            nextArrow: $(".js-review-arrow-right"),
+            prevArrow: $(".js-review-arrow-left"),
+            dots: true,
+            fade: true
+        })
+
+    }
+
 });
 
 // document.addEventListener('DOMContentLoaded', function () {

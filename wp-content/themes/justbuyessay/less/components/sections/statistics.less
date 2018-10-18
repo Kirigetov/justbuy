@@ -68,3 +68,40 @@
     }
   }
 }
+
+.s-statistics{
+  &__title{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-family: @ave-bold;
+    color: @text_dark;
+    line-height: 1;
+  }
+
+  &__body{
+    padding: 25px;
+    border: 2px solid @green;
+    border-radius: 6px;
+  }
+
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.s-statistic{
+  &__value,
+  &__value-total{
+    font-size: 20px;
+    font-family: @ave-bold;
+    color: @green;
+  }
+
+  &__type{
+    font-size: 16px;
+    font-family: @ave-bold;
+    color: @text_dark;
+  }
+}

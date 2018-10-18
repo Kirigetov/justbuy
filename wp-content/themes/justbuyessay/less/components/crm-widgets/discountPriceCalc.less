@@ -140,3 +140,71 @@
     }
   }
 }
+
+.sidebar {
+  .discount-calc {
+    div[data-crm-widget="discountPriceCalc"] {
+      #cw-widgets-discount-price-calc{
+        background-color: #edf3ff;
+        border-radius: 6px;
+
+        @media only screen and (min-width: 600px) {
+          max-width: 370px;
+          margin: 0 auto 70px;
+        }
+
+        .cw-discount-select-numpages-container {
+          &:after{
+            background-color: #fff !important;
+          }
+        }
+          .cw-numpages-up select,
+        .cw-discount-select-numpages-container select{
+            background-color: #fff !important;
+        }
+
+        //.cw-numpages-up select,
+        .cw-discount-select-container select {
+          background: #fff !important;
+        }
+
+        .cw-discount-select-container {
+          &:after{
+            background-color: #fff !important;
+          }
+        }
+        .cw-numpages-down,
+        .cw-numpages-up{
+          background-color: #fff !important;
+          flex: 1 0 45px;
+        }
+
+        .cw-standart-price{
+          border-color: #fff;
+        }
+
+        .cw-order-button{
+          font-size: 0;
+
+          &:before{
+            content: 'Continue';
+            font-size: 16px;
+            font-family: @ave-med;
+            letter-spacing: 1px;
+          }
+        }
+
+        .cw-discount-title{
+          font-size: 0;
+          //text-align: left;
+
+          &:after{
+            content: 'Place New Order';
+            font-size: 16px;
+            color: #474747;
+          }
+        }
+      }
+    }
+  }
+}

@@ -20,4 +20,24 @@
     <path fill="#5077F6" d="M1967.6-54L45 190.8l1920 202.3 2.6-447.1z"/>
 </symbol><symbol viewBox="0 0 661.9 449.2" id="hero_price_bg_mob" xmlns="http://www.w3.org/2000/svg">
     <path fill="#5077F6" d="M661.9 0L0 228.7l655.4 220.5L661.9 0z"/>
+</symbol><symbol viewBox="0 0 934 481" id="review_l_big" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#5077F6" d="M934 325L40 481 0 0l934 325z"/>
+</symbol><symbol viewBox="0 0 347.6 268.9" id="review_l_small" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#5077F6" d="M347.6 0L0 88.2 220.2 269 347.6 0z"/>
+</symbol><symbol viewBox="0 0 731 468" id="review_r_big" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#5077F6" d="M0 394L731 0l-78 468L0 394z"/>
+</symbol><symbol viewBox="0 0 348 269" id="review_r_small" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#5077F6" d="M0 0l348 88.2L127.6 269 0 0z"/>
+</symbol><symbol viewBox="0 0 1454 648" id="reviews" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <style>.pcls-1{fill:#5077f6;fill-rule:evenodd;filter:url(#pfilter)}</style>
+        <filter id="pfilter" x="264" y="1100" width="1454" height="648" filterUnits="userSpaceOnUse">
+            <feOffset result="offset" dx="19.015" dy="17.732" in="SourceAlpha"/>
+            <feGaussianBlur result="blur" stdDeviation="7.874"/>
+            <feFlood result="flood" flood-color="#14339a" flood-opacity=".35"/>
+            <feComposite result="composite" operator="in" in2="blur"/>
+            <feBlend result="blend" in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <path id="pМногоугольник_2_копия_5" data-name="Многоугольник 2 копия 5" class="pcls-1" d="M1334 1468l-894 156-40-481zm-571 126l731-394-78 468zm-108.554-314.71l-347.633 88.17 220.225 180.75zm634.544-.28l348.01 88.18-220.46 180.8z" transform="translate(-264 -1100)"/>
 </symbol></svg>
