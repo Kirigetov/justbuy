@@ -5,33 +5,12 @@
 // if you need 2-columns layout (with sidebar)
 
 .page-content{
-  font-size: 16px;
-  line-height: 1.4;
-  text-align: justify;
-
-  ul, ol{
-    list-style: none;
-
-    li{
-      margin-bottom: 10px;
-      text-indent: 30px;
-    }
-  }
 
   @media @min-lg{
     flex: 1;
   }
 }
 
-.page-sidebar{
-  display: block;
-  padding-top: 30px;
-
-  @media @min-lg{
-    margin-left: 30px;
-    padding-top: 40px;
-  }
-}
 
 .page-container{
   @media @min-lg{
@@ -123,14 +102,56 @@
 }
 
 .center-cols{
-  display: flex;
+  @media @min-md{
+    display: flex;
 
-  .page-content{
-    flex: 1 1 770px;
+    .page-content{
+      flex: 1 1 770px;
+    }
+  }
+}
+
+.page-sidebar{
+  margin-bottom: 30px;
+  padding-top: 20px;
+  @media @min-md{
+    max-width: 340px;
+    flex: 1 0 370px;
+    margin-left: 30px;
+    padding-top: 5px;
+  }
+  @media @min-lg{
+    max-width: none;
+  }
+}
+
+.sidebar{
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media @min-smx{
+    display: flex;
+    margin: 0 -10px;
+    max-width: none;
+
+    .discount-calc,
+    .s-statistics{
+      padding: 0 10px;
+    }
+
+    .s-statistics{
+      padding-top: 16px;
+    }
   }
 
-  .page-sidebar{
-    flex: 1 0 400px;
-    padding-left: 20px;
+  @media @min-md{
+    display: block;
+    margin: 0;
+
+    .discount-calc,
+    .s-statistics{
+      padding: 0;
+    }
   }
 }

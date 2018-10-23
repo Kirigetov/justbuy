@@ -26,6 +26,7 @@
   &_left{
     text-align: left;
   }
+
   &_white{
     color: #fff;
   }
@@ -35,6 +36,15 @@
   &_blue{
     color: @blue;
   }
+
+  &_about{
+    &.hero__title{
+      @media @min-sm{
+        color: @blue;
+      }
+    }
+  }
+
   &_how{
     margin: 10px 0 40px;
     
@@ -110,4 +120,40 @@ article h3{
 article p{
   font-size: 15px;
   line-height: 1.5;
+}
+
+.article{
+  &_mb{
+    margin-bottom: 30px;
+
+    @media @min-md{
+      margin-bottom: 50px;
+    }
+
+    @media @min-lg{
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.article,
+.page-content{
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: justify;
+
+  ul, ol{
+    list-style: none;
+
+    li{
+      margin-bottom: 10px;
+      text-indent: 30px;
+    }
+  }
+
+  p{
+    &:first-child{
+      margin-top: 0;
+    }
+  }
 }
