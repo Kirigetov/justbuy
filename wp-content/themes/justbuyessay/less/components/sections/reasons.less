@@ -13,6 +13,38 @@
   }
 }
 
+.reasons_horizontal{
+  @media @max-sm{
+    .reason{
+      align-items: flex-start;
+
+      &__body{
+        padding-right: 0;
+      }
+    }
+  }
+
+  @media @min-sm{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+
+    .reasons__item{
+      flex: 1 0 33.3%;
+      padding: 0 10px;
+    }
+  }
+
+  @media @min-lg{
+    margin: 0 -15px;
+
+    .reasons__item{
+      flex: 1 0 33.3%;
+      padding: 0 15px;
+    }
+  }
+}
+
 .reason{
   display: flex;
   flex-flow: row nowrap;

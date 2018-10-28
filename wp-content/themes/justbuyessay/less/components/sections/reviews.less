@@ -84,6 +84,9 @@
   background-color: white;
 
   @media @min-sm{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     padding: 30px;
   }
 
@@ -91,42 +94,46 @@
     font-size: 16px;
     color: #686868;
     line-height: 1.3;
+    text-align: left;
 
     @media @min-sm{
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       font-size: 20px;
     }
   }
 
-  &__header{
+  &__body{
     margin-bottom: 15px;
 
     @media @min-sm{
-      display: flex;
-      justify-content: space-between;
-      order: 2;
-      margin-bottom: 0;
-    }
-  }
-
-  &__body{
-    @media @min-sm{
       order: 1;
+      flex: 1 0 100%;
     }
   }
 }
 
 .review-rate{
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-size: 14px;
 
   &__title{
     margin-bottom: 2px;
   }
+
+  @media @min-sm{
+    order: 2;
+    flex: 1 0 50%;
+  }
 }
 
 .review-info{
   font-size: 14px;
+
+  @media @min-sm{
+    order: 2;
+    flex: 1 0 50%;
+    text-align: right;
+  }
 }
 
 .reviews-triangles{
@@ -220,6 +227,72 @@
 
   &_right{
     right: 0;
+  }
+}
+
+.reviews_land{
+  padding: 0 15px;
+
+  .review{
+    padding: 0;
+
+    @media @min-sm {
+      max-width: 660px;
+      background: none;
+      box-shadow: none;
+
+      &__text{
+        color: #fff;
+      }
+    }
+
+    &__text{
+      margin-bottom: 10px;
+
+      @media @min-lg{
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
+  .review-rate,
+  .review-info{
+    @media @min-sm {
+      color: #fff;
+    }
+  }
+
+  .slick-list{
+    padding: 0;
+
+    //@media @min-lg{
+    //  padding: 20px 0;
+    //}
+  }
+
+  .slick-dots {
+    li {
+      button{
+        &:before{
+          background-color: #fff;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.reviews-arrows_land{
+
+  .review-arrow_right{
+    @media @min-sm{
+      right: 100px;
+    }
+  }
+  .review-arrow_left{
+    @media @min-sm{
+      left: 100px;
+    }
   }
 }
 

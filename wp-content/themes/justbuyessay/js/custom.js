@@ -93,6 +93,18 @@ $(document).ready(function () {
         });
     }
 
+    if($('.js-reviews-land').length) {
+        $('.js-reviews-land').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinity: false,
+            nextArrow: $(".js-review-arrow-right"),
+            prevArrow: $(".js-review-arrow-left"),
+            fade: true,
+            dots: true
+        })
+    }
+
     if($('.js-reviews').length) {
 
         var revSlider = $('.js-reviews');

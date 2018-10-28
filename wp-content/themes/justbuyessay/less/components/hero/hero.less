@@ -190,3 +190,54 @@
     //transform: translate(-50%, 0);
   }
 }
+
+.hero_land{
+
+  @media @min-sm{
+    margin-bottom: 100px;
+
+    .hero__body{
+      max-width: 420px;
+      margin-bottom: 0;
+    }
+
+    .icon-winners{
+      max-width: 260px;
+    }
+
+    .hero__inner{
+      display: flex;
+    }
+  }
+
+  @media @min-md{
+    margin-bottom: 40px;
+
+    .hero__body{
+      max-width: 560px;
+    }
+
+    .hero__img{
+      margin: 0 auto;
+
+      .icon-winners{
+        max-width: 330px;
+      }
+    }
+  }
+
+  @media @min-lg{
+    .hero__img{
+      padding-right: 100px;
+    }
+
+    .hero__body{
+      max-width: 600px;
+    }
+  }
+}
+
+.icon-winners{
+  width: 400px;
+  height: 320px;
+}

@@ -45,6 +45,7 @@
     }
   }
 
+
   &_how{
     margin: 10px 0 40px;
     
@@ -59,6 +60,10 @@
 
     &_mb_sm{
       margin-bottom: 15px;
+    }
+
+    &_rev_land{
+      margin-bottom: 30px;
     }
   }
 }
@@ -99,7 +104,7 @@ article h2,
 article h3{
   padding: 16px 15px 17px 0;
   text-transform: capitalize;
-  color: @gray_dark;
+  color: @blue_light;
 }
 
 article h1{
@@ -120,6 +125,10 @@ article h3{
 article p{
   font-size: 15px;
   line-height: 1.5;
+
+  @media @min-sm{
+    font-size: 16px;
+  }
 }
 
 .article{

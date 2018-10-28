@@ -57,6 +57,10 @@
     padding-bottom: 0;
   }
 
+  &_no_pad_top{
+    padding-top: 0;
+  }
+
   &_pad{
     padding: 50px;
   }
@@ -64,6 +68,32 @@
   &_gray_bg{
     background-color: #edf3ff;
     border-radius: 10px;
+  }
+
+  &_rev_land{
+    margin-bottom: 40px;
+
+    @media @min-sm{
+      margin-bottom: 80px;
+      padding: 60px 0 40px;
+    }
+
+    @media @min-md{
+      margin-bottom: 120px;
+      padding: 110px 0 90px;
+    }
+
+    @media @min-lg{
+      padding: 80px 0;
+    }
+  }
+
+  &_stat_land{
+    margin-bottom: 20px;
+  }
+
+  &_reason{
+    padding: 50px 0 80px;
   }
 }
 

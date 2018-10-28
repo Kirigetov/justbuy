@@ -29,7 +29,8 @@ reload = browserSync.reload;
 //TASK: gulp
 //--------------------------------------------------
 gulp.task('default', ['less', 'js', 'svg:inline', 'svg:css'], function () {
-    is_prod ? gulp.start('img') : gulp.start('browser-sync', 'watch');
+    gulp.start('browser-sync', 'watch');
+    // is_prod ? gulp.start('img') : gulp.start('browser-sync', 'watch');
 });
 
 //TASK: gulp watch
@@ -44,12 +45,12 @@ gulp.task('watch', function() {
 
 //TASK: gulp img
 //--------------------------------------------------
-gulp.task('img', function() {
-    gulp.src(['./{img,sprite-src,css}/**/*.{png,jpg,jpeg,gif}', './screenshot.png'])
-        .pipe(plumber())
-        .pipe(imagemin({progressive: true}))
-        .pipe(gulp.dest("./"));
-});
+// gulp.task('img', function() {
+//     gulp.src(['./{img,sprite-src,css}/**/*.{png,jpg,jpeg,gif}', './screenshot.png'])
+//         .pipe(plumber())
+//         .pipe(imagemin({progressive: true}))
+//         .pipe(gulp.dest("./"));
+// });
 
 // TASK: gulp less
 // --------------------------------------------------

@@ -26,6 +26,18 @@
     <path fill="#5077F6" d="M1967.6-54L45 190.8l1920 202.3 2.6-447.1z"/>
 </symbol><symbol viewBox="0 0 661.9 449.2" id="hero_price_bg_mob" xmlns="http://www.w3.org/2000/svg">
     <path fill="#5077F6" d="M661.9 0L0 228.7l655.4 220.5L661.9 0z"/>
+</symbol><symbol viewBox="0 0 1200 751" id="land_hero_base" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3478FA" d="M556.8-438.7L1313.2 25l215.4 610.3-1525-230 553.2-844z"/>
+</symbol><symbol viewBox="0 0 1200 751" id="land_hero_left" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3478FA" d="M-11.4-57.9L746.7-1.3l421.2 285.4L-58 567.2l46.6-625.1z"/>
+</symbol><symbol viewBox="0 0 692 462" id="land_hero_right" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3478FA" d="M697 155.6L691.4 28 30 300.7l661.4 128.4 5.6-273.5z"/>
+</symbol><symbol viewBox="0 0 544 281.2" id="land_stat_1" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#F6F6F6" d="M413.7 0L0 167.1l544 114.1L413.7 0z"/>
+</symbol><symbol viewBox="0 0 653 271.1" id="land_stat_2" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#F6F6F6" d="M653 205.5L0 0l185.5 271.1L653 205.5z"/>
+</symbol><symbol viewBox="0 0 1440 675" id="review_bg" xmlns="http://www.w3.org/2000/svg">
+    <path fill="#3478FA" d="M0 0l692.5 43.6L1440 0v664.7L381.9 614 0 674.9V0z"/>
 </symbol><symbol viewBox="0 0 934 481" id="review_l_big" xmlns="http://www.w3.org/2000/svg">
     <path fill="#5077F6" d="M934 325L40 481 0 0l934 325z"/>
 </symbol><symbol viewBox="0 0 347.6 268.9" id="review_l_small" xmlns="http://www.w3.org/2000/svg">
@@ -36,8 +48,8 @@
     <path fill="#5077F6" d="M0 0l348 88.2L127.6 269 0 0z"/>
 </symbol><symbol viewBox="0 0 1454 648" id="reviews" xmlns="http://www.w3.org/2000/svg">
     <defs>
-        <style>.scls-1{fill:#5077f6;fill-rule:evenodd;filter:url(#sfilter)}</style>
-        <filter id="sfilter" x="264" y="1100" width="1454" height="648" filterUnits="userSpaceOnUse">
+        <style>.ycls-1{fill:#5077f6;fill-rule:evenodd;filter:url(#yfilter)}</style>
+        <filter id="yfilter" x="264" y="1100" width="1454" height="648" filterUnits="userSpaceOnUse">
             <feOffset result="offset" dx="19.015" dy="17.732" in="SourceAlpha"/>
             <feGaussianBlur result="blur" stdDeviation="7.874"/>
             <feFlood result="flood" flood-color="#14339a" flood-opacity=".35"/>
@@ -45,5 +57,5 @@
             <feBlend result="blend" in="SourceGraphic"/>
         </filter>
     </defs>
-    <path id="sМногоугольник_2_копия_5" data-name="Многоугольник 2 копия 5" class="scls-1" d="M1334 1468l-894 156-40-481zm-571 126l731-394-78 468zm-108.554-314.71l-347.633 88.17 220.225 180.75zm634.544-.28l348.01 88.18-220.46 180.8z" transform="translate(-264 -1100)"/>
+    <path id="yМногоугольник_2_копия_5" data-name="Многоугольник 2 копия 5" class="ycls-1" d="M1334 1468l-894 156-40-481zm-571 126l731-394-78 468zm-108.554-314.71l-347.633 88.17 220.225 180.75zm634.544-.28l348.01 88.18-220.46 180.8z" transform="translate(-264 -1100)"/>
 </symbol></svg>
